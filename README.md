@@ -1,2 +1,2 @@
-# art_quest
-A react and strapi.js based project
+# AQ Project
+A React and strapi.js based project
