@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:14.17.3
     steps:
       - checkout
-      - run: echo "this is the build job"
+      - run: node --version
 
   test:
     docker:
