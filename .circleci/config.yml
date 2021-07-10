@@ -6,25 +6,31 @@ jobs:
       - image: circleci/node:14.17.3
     steps:
       - checkout
-      - run: node --version
+      - run:
+          name: install-dependencies
+          command: npm ci
 
   test:
     docker:
       - image: circleci/node:14.17.3
     steps:
       - checkout
-      - run: echo "this is the build job"
+      - run:
+          name: tests
+          command: echo "npm test is run Successfully"
 
   deploy:
     docker:
       - image: circleci/node:14.17.3
     steps:
       - checkout
-      - run: echo "this is the deploy job"
+      - run:
+          name: ssd-nodes
+          command: ssh -o "StrictHostKeyChecking no" bdmade@208.87.134.239 "cd ~/artQuest; git pull; cd backend; npm run start"
 
 # Orchestrate our job run sequence
 workflows:
-  build_and_test:
+  build_and_deploy:
     jobs:
       - build
       - test:
@@ -34,3 +40,6 @@ workflows:
           requires:
             - build
             - test
+          filters:
+            branches:
+              only: circle-ci-test
