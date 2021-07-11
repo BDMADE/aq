@@ -8,7 +8,11 @@ on:
     branches: [ circle-ci-test ]
 
 jobs:
-  test-backend:
+  checkout-code:
+    - name: CHECK-OUT GIT REPOSITORY
+      uses: actions/checkout@v2
+
+  build-backend:
     runs-on: self-hosted
     defaults:
       run:
@@ -18,9 +22,6 @@ jobs:
         node-version: [14.x]
         architecture: [x64]
     steps:
-      - name: CHECK-OUT GIT REPOSITORY
-        uses: actions/checkout@v2
-
       - name: USE NODEJS ${{ matrix.node-version }} - ${{ matrix.architecture }}
         uses: actions/setup-node@v2
 
@@ -30,4 +31,19 @@ jobs:
       - name: BUILD THE WEBPACK
         run: yarn build
 
+  build-frontend:
+    runs-on: self-hosted
+    defaults:
+      run:
+        working-directory: ./frontend
+    strategy:
+      matrix:
+        node-version: [14.x]
+        architecture: [x64]
+    steps:
+      - name: INSTALL PROJECT DEPENDENCIES (YARN)
+        run: yarn install
+
+      - name: BUILD THE WEBPACK
+        run: yarn build
 
