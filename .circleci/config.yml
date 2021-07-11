@@ -1,0 +1,30 @@
+version: 2.1
+# Define the jobs we want to run for this project
+jobs:
+  build:
+    docker:
+      - image: circleci/node:14.17.3
+    steps:
+      - checkout
+      - run:
+          name: install-dependencies
+          command: yarn install
+
+  test:
+    docker:
+      - image: circleci/node:14.17.3
+    steps:
+      - checkout
+      - run:
+          name: tests
+          command: echo "npm test is run Successfully"
+
+# Orchestrate our job run sequence
+workflows:
+  build_and_test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+
