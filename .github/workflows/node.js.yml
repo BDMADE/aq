@@ -27,9 +27,6 @@ jobs:
       - name: INSTALL PROJECT DEPENDENCIES (YARN)
         run: yarn install
 
-      - name: CREATE PRODUCTION .ENV FILE
-        run: aq_env_backend
-
       - name: Enable Stapi EE
         run: strapi_ee
 
@@ -58,6 +55,5 @@ jobs:
     steps:
       - name: Delete the Node Process Manager
         run: pm2 delete art_quest_backend art_quest_frontend
-      - name: Reload the Node Process Manager
+      - name: start the Node Process Manager
         run: pm2 start ecosystem.config.js -i 0
-
