@@ -5,7 +5,7 @@ name: Art Quest CI
 
 on:
   push:
-    branches: [ circle-ci-test ]
+    branches: [ github-action ]
 
 jobs:
   checkout-code:
