@@ -29,6 +29,7 @@ jobs:
 
   build-frontend:
     runs-on: self-hosted
+    needs: build-backend
     defaults:
       run:
         working-directory: ./frontend
@@ -38,4 +39,11 @@ jobs:
 
       - name: BUILD THE WEBPACK
         run: yarn build
+
+  reload-process-manager:
+    runs-on: self-hosted
+    needs: [build-backend, build-frontend]
+    steps:
+      - name: Reload the Node Process Manager
+        run: pm2 reload ecosystem.config.js -i 0
 
