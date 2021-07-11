@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: install-dependencies
-          command: npm ci
+          command: yarn install
 
   test:
     docker:
@@ -18,7 +18,6 @@ jobs:
       - run:
           name: tests
           command: echo "npm test is run Successfully"
-
 
 # Orchestrate our job run sequence
 workflows:
