@@ -2,7 +2,7 @@ module.exports = {
   apps : [
     {
       name: 'art_quest_backend',
-      cwd: '/home/bdmade/artQuest/backend',
+      cwd: './backend',
       script: 'yarn',
       args: 'start',
       interpreter: '/bin/bash',
@@ -13,7 +13,7 @@ module.exports = {
    },
     {
       name: 'art_quest_frontend',
-      cwd: '/home/bdmade/artQuest/frontend',
+      cwd: './frontend',
       script: 'yarn',
       args: 'start',
       interpreter: '/bin/bash',
