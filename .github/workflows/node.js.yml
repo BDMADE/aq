@@ -16,6 +16,7 @@ jobs:
 
   build-backend:
     runs-on: self-hosted
+    needs: checkout-code
     defaults:
       run:
         working-directory: ./backend
