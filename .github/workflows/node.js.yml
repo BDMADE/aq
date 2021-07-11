@@ -19,12 +19,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: cd backend
-      - run: npm i
-      - run: npm run build --if-present
+      - name: Install dependencies
+      - run: yarn install
+        working-directory: backend
+      - name: Install dependencies
+      - run: yarn build --clean
+        working-directory: backend
 
