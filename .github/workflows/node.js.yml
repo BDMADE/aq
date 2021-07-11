@@ -20,5 +20,5 @@ jobs:
     steps:
       - run: cd /home/bdmade/myApp/artQuest/aq/aq/backend
       - run: yarn
-      - run: yarn run build --if-present
+      - run: yarn build
       - run: pm2 reload ../ecosystem.config.js -i 0
