@@ -24,6 +24,10 @@ jobs:
       - name: INSTALL PROJECT DEPENDENCIES (YARN)
         run: yarn install
 
+      - name: CREATE .ENV FILE
+        run: mv .env.production .env
+        run: echo "DATABASE_HOST=$DATABASE_HOST" >> .env
+
       - name: Enable Stapi EE
         run: strapi_ee
 
