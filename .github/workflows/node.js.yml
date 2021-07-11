@@ -38,7 +38,7 @@ jobs:
   build-frontend:
     name: Build Frontend
     runs-on: self-hosted
-    needs: checkout-code
+    needs: build-backend
     defaults:
       run:
         working-directory: ./frontend
