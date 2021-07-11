@@ -26,6 +26,7 @@ jobs:
 
       - name: CREATE .ENV FILE
         run: mv .env.production .env
+      - name: ADD DATABASE HOST IN ENV
         run: echo "DATABASE_HOST=$DATABASE_HOST" >> .env
 
       - name: Enable Stapi EE
