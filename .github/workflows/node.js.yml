@@ -24,8 +24,11 @@ jobs:
       - name: INSTALL PROJECT DEPENDENCIES (YARN)
         run: yarn install
 
+      - name: Enable Stapi EE
+          run: strapi_ee
+
       - name: BUILD THE WEBPACK
-        run: yarn build
+        run: yarn build --clean
 
   build-frontend:
     runs-on: self-hosted
@@ -38,7 +41,7 @@ jobs:
         run: yarn install
 
       - name: BUILD THE WEBPACK
-        run: yarn build
+        run: yarn build --clean
 
   reload-process-manager:
     runs-on: self-hosted
