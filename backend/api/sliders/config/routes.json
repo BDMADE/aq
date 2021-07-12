@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/sliders",
+      "handler": "sliders.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "api//sliders/count",
+      "handler": "sliders.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/sliders/:id",
+      "handler": "sliders.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/sliders",
+      "handler": "sliders.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/sliders/:id",
+      "handler": "sliders.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/sliders/:id",
+      "handler": "sliders.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
