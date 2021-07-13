@@ -1,15 +1,10 @@
 import React from 'react';
+import SliderList from "./Slider/SliderList";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-         Hello World!
-        </p>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <SliderList/>
+    );
 }
 
 export default App;
