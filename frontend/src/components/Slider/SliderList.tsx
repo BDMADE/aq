@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from './Slider';
-import SLIDER_QUERY from '../../queries/slider/sliders'
+import GET_SLIDERS_QUERY from '../../queries/slider/sliders'
 import { useQuery } from "@apollo/client";
 
 const SliderList = () => {
-    let { data } = useQuery(SLIDER_QUERY);
+    let { data } = useQuery(GET_SLIDERS_QUERY);
     return(
         <div>{ data && (
             <>

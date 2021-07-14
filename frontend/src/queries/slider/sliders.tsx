@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client";
 
-const SLIDER_QUERY = gql`
+const GET_SLIDERS_QUERY = gql`
     {
         sliders {
             id
@@ -13,4 +13,4 @@ const SLIDER_QUERY = gql`
     }
 `;
 
-export default SLIDER_QUERY;
+export default GET_SLIDERS_QUERY;
