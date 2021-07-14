@@ -5,6 +5,6 @@ const App = () => {
     return (
         <SliderList/>
     );
-}
+};
 
 export default App;
