@@ -18,7 +18,7 @@ const Header = () => {
                             <input type="checkbox" hidden id="ct-main-nav__toggle-navigation-main" />
                                 <nav id="ct-main-nav__wrapper">
                                     <ul id="menu-menu" className="ct-main-navigation">
-                                        <li id="menu-item-114" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-114"><a>About</a>
+                                        <li id="menu-item-114" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-114"><a href="/memberships">About</a>
                                         <ul className="sub-menu">
                                                 <li id="menu-item-143" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-143"><Link to="/memberships">Memberships</Link></li>
                                                 <li id="menu-item-144" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-144"><Link to="/board-of-directors">Board of Directors</Link></li>
