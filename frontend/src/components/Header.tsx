@@ -1,17 +1,7 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logoBlack from '../images/branding/logo-black.png';
 import logoBlackSmall from '../images/branding/logo-black-small.png';
-import Homepage from "../pages/Homepage";
-import Memberships from "../pages/About/Memberships";
-import Directors from "../pages/About/Directors";
-import Gallery from "../pages/About/Gallery";
-import Support from "../pages/About/Support";
-import Events from "../pages/Events";
-import Exhibitions from "../pages/Exhibitions";
-import Artists from "../pages/Artists";
-import Archive from "../pages/Archive";
-import Contact from "../pages/Contact";
 
 const Header = () => {
     return (
