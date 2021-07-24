@@ -1,43 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <title>Art Quest Exhibition</title>
+  <meta name='robots' content='max-image-preview:large' />
+  <meta name="generator" content="Powered by BDMADE" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <!-- styles -->
+  <link rel='stylesheet' id='rs-plugin-settings-css' href='%PUBLIC_URL%/assets/css/settings.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='arte-style-css' href='%PUBLIC_URL%/assets/css/timetable.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='arte-style-css' href='%PUBLIC_URL%/assets/css/xtender.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='bootstrap-css' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='owl-carosal-css' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.carousel.min.css' type='text/css' media='all' />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/basic.css" type='text/css' media='all' />
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/themify-icons.css" type='text/css' media='all' />
+  <link rel='stylesheet' id='arte-style-css' href='%PUBLIC_URL%/assets/css/custom.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='arte-style-css' href='%PUBLIC_URL%/assets/css/rev.css' type='text/css' media='all' />    <link rel='stylesheet' id='arte-google-fonts-css' href='//fonts.googleapis.com/css?family=Droid+Serif:400%7CPlayfair+Display:400,400italic%7CPoppins:200,300,400&#038;subset=latin' type='text/css' media='all' />
+  <link rel='stylesheet' id='arte-style-css' href='%PUBLIC_URL%/assets/css/js_composer.css' type='text/css' media='all' />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' id='jquery-core-js'></script>
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+  <script type='text/javascript' src='%PUBLIC_URL%/assets/js/rbtools.min.js' async id='tp-tools-js'></script>
+  <script rel="preload" type='text/javascript' src='%PUBLIC_URL%/assets/js/rs6.min.js' async id='revmin-js'></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <script type="text/javascript">
+    function setREVStartSize(e){
+      //window.requestAnimationFrame(function() {
+      window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+      window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+      try {
+        var pw = document.getElementById(e.c).parentNode.offsetWidth,
+                newh;
+        pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+        e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+        e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+        e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+        e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+        e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+        e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+        e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+        if(e.layout==="fullscreen" || e.l==="fullscreen")
+          newh = Math.max(e.mh,window.RSIH);
+        else{
+          e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+          for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+          e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+          e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+          for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+
+          var nl = new Array(e.rl.length),
+                  ix = 0,
+                  sl;
+          e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+          e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+          e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+          e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+          for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+          sl = nl[0];
+          for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+          var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+          newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+        }
+        if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));
+        document.getElementById(e.c).height = newh+"px";
+        window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";
+      } catch(e){
+        console.log("Failure at Presize of Slider:" + e)
+      }
+      //});
+    };</script>
+  <script type="text/javascript" id="rs-initialisation-scripts">
+    var	tpj = jQuery;
+
+    var	revapi1073,revapi4;
+
+    if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+    if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+    RS_MODULES.modules["revslider10731"] = {init:function() {
+        revapi1073 = jQuery("#rev_slider_1073_1");
+        if(revapi1073==undefined || revapi1073.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_1073_1"); return;}
+        revapi1073.revolutionInit({
+          sliderLayout:"fullscreen",
+          visibilityLevels:"1500,1500,1500,480",
+          gridwidth:"1240,1240,1240,480",
+          gridheight:"900,900,900,720",
+          lazyType:"single",
+          spinner:"spinner7",
+          perspective:600,
+          perspectiveType:"global",
+          lazyloaddata:"lazy-src",
+          editorheight:"900,768,960,720",
+          responsiveLevels:"1500,1500,1500,480",
+          fullScreenOffsetContainer:"#masthead",
+          progressBar: {
+            bgcolor:"rgba(255,255,255,0.15)",
+            color:"#ffffff",
+            style:"cw",
+            horizontal:"right",
+            size:"1px",
+            radius:20,
+            x:"120px",
+            y:"25px"
+          },
+          navigation: {
+            wheelCallDelay:1000,
+            onHoverStop:false,
+            arrows: {
+              enable:true,
+              style:"clean_arrows",
+              left: {
+                anim:"left",
+                h_align:"right",
+                v_align:"bottom",
+                h_offset:65,
+                v_offset:20
+              },
+              right: {
+                anim:"right",
+                v_align:"bottom",
+                v_offset:20
+              }
+            },
+            thumbnails: {
+              enable:true,
+              tmp:"<span class=\"tp-thumb-image\"></span>",
+              style:"thin-bars",
+              hide_onmobile:true,
+              hide_under:778,
+              h_align:"left",
+              v_offset:0,
+              space:0,
+              width:120,
+              height:60,
+              min_width:120,
+              wrapper_padding:0,
+              wrapper_color:"transparent"
+            }
+          },
+          parallax: {
+            levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,30],
+            type:"scroll",
+            origo:"slidercenter",
+            speed:0
+          },
+          viewPort: {
+            global:true,
+            globalDist:"-200px",
+            enable:false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid:true
+          },
+        });
+
+        BubbleMorphAddOn(jQuery, revapi1073, false);
+
+      }} // End of RevInitScript
+
+    if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+    if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+    RS_MODULES.modules["revslider42"] = {init:function() {
+        revapi4 = jQuery("#rev_slider_4_2");
+        if(revapi4==undefined || revapi4.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_4_2"); return;}
+        revapi4.revolutionInit({
+          sliderType:"hero",
+          DPR:"dpr",
+          sliderLayout:"fullwidth",
+          visibilityLevels:"1500,1240,778,480",
+          gridwidth:"1240,1024,778,480",
+          gridheight:"785,685,518,493",
+          lazyType:"smart",
+          forceOverflow:true,
+          perspective:600,
+          perspectiveType:"local",
+          lazyloaddata:"lazy-src",
+          editorheight:"785,685,518,493",
+          responsiveLevels:"1500,1240,778,480",
+          progressBar:{disableProgressBar:true},
+          navigation: {
+            onHoverStop:false
+          },
+          viewPort: {
+            global:true,
+            globalDist:"-200px",
+            enable:true,
+            visible_area:"0px"
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid:true
+          },
+        });
+
+      }} // End of RevInitScript
+
+    if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+  </script>
+
+  <style type="text/css" data-type="vc_shortcodes-custom-css">
+    .vc_custom_1506608142427{padding-top: 0px !important;}.vc_custom_1503927399309{background-color: #f5f5f5 !important;}.vc_custom_1503604954255{padding-top: 0px !important;}.vc_custom_1506608222664{margin-top: 0px !important;}.vc_custom_1506607911806{margin-top: 0px !important;}.vc_custom_1506607885885{margin-top: 0px !important;}.vc_custom_1506608228976{margin-bottom: 0px !important;}.vc_custom_1506606336486{margin-bottom: 0px !important;}.vc_custom_1506606361302{margin-bottom: 0px !important;}.vc_custom_1504551155911{margin-right: 35% !important;}.vc_custom_1504551166464{margin-top: -25% !important;margin-left: 70% !important;}</style>
+  <noscript>
+    <style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style>
+  </noscript>
+</head>
+
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
 </html>

@@ -1,0 +1,884 @@
+body {
+    font-family: 'Droid Serif', serif;
+    font-weight: normal;
+    font-size: 0.875rem
+}
+
+h1,
+.h1 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-size: 3.09375rem;
+    letter-spacing: -0.05em
+}
+
+@media(min-width:768px) {
+    h1,
+    .h1 {
+        font-size: 4.125rem
+    }
+}
+
+h2,
+.h2,
+.woocommerce.single .product[id] .product_title {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    text-transform: none;
+    font-size: 3.25rem;
+    letter-spacing: -0.04em
+}
+
+h3,
+.h3 {
+    font-family: 'Poppins';
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 1.875rem
+}
+
+h4,
+.h4 {
+    font-family: 'Poppins';
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: 0.15em
+}
+
+h5,
+.h5,
+body.woocommerce h2.woocommerce-loop-product__title.woocommerce-loop-product__title,
+.woocommerce-tabs .tabs>li>a {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 1.25rem
+}
+
+h6,
+.h6 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    text-transform: none;
+    font-size: 1rem
+}
+
+blockquote,
+blockquote p,
+.pullquote,
+.blockquote,
+.text-blockquote {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+    font-size: 1.4375rem
+}
+
+blockquote cite {
+    font-family: 'Droid Serif', serif
+}
+
+.ct-main-navigation,
+input[type=text],
+input[type=email],
+input[type=name],
+textarea,
+select,
+.product_meta {
+    font-family: 'Poppins';
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em
+}
+
+input[type=submit],
+button {
+    font-family: 'Poppins'
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small {
+    font-family: 'Poppins'
+}
+
+.font-family--h1 {
+    font-family: 'Playfair Display'
+}
+
+,
+.font-family--h2 {
+    font-family: 'Playfair Display'
+}
+
+,
+.font-family--h3 {
+    font-family: 'Poppins'
+}
+
+#reviews .comment-text .star-rating,
+#reviews .comment-reply-title {
+    font-family: 'Poppins'
+}
+
+.xtd-recent-posts__post__title {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    text-transform: none;
+    font-size: 1rem
+}
+
+.sub-menu a,
+.children a {
+    font-family: 'Droid Serif', serif;
+    font-weight: normal
+}
+
+#footer .widget-title {
+    font-family: 'Poppins';
+    font-weight: normal;
+    text-transform: uppercase
+}
+
+table thead th {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    text-transform: capitalize
+}
+
+.btn,
+.wcs-more.wcs-btn--action,
+.vc_general.vc_btn3.vc_btn3,
+.button {
+    font-family: 'Poppins';
+    font-weight: normal;
+    text-transform: uppercase
+}
+
+.ct-header__main-heading small,
+.special-title em:first-child,
+.wcs-timetable--carousel .wcs-class__timestamp .date-day {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: italic
+}
+
+.ct-vc-text-separator {
+    font-family: 'Playfair Display';
+    font-weight: normal
+}
+
+.wcs-timetable--week .wcs-class__title,
+.wcs-timetable--agenda .wcs-class__title {
+    font-family: 'Poppins'
+}
+
+.xtd-gmap-info {
+    font-family: 'Droid Serif', serif;
+    font-weight: normal;
+    font-size: 0.875rem
+}
+
+.xtd-timeline__item::before {
+    font-family: 'Poppins';
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: 0.15em
+}
+
+body {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1)
+}
+
+h1,
+.h1 {
+    color: rgba(0, 0, 0, 1)
+}
+
+h2,
+.h2 {
+    color: rgba(0, 0, 0, 1)
+}
+
+h3,
+.h3 {
+    color: rgba(184, 157, 79, 1)
+}
+
+h4,
+.h4 {
+    color: rgba(184, 157, 79, 1)
+}
+
+h5,
+.h5 {
+    color: rgba(51, 51, 51, 1)
+}
+
+h6,
+.h6 {
+    color: rgba(51, 51, 51, 1)
+}
+
+a {
+    color: rgba(51, 51, 51, 1)
+}
+
+a:hover {
+    color: rgba(51, 51, 51, 0.75)
+}
+
+.ct-content {
+    border-color: rgba(0, 0, 0, 0.15)
+}
+
+input[type=text],
+input[type=search],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=url],
+input[type=date],
+input[type=tel],
+select,
+textarea,
+.form-control {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1)
+}
+
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=url]:focus,
+input[type=date]:focus,
+input[type=tel]:focus,
+select:focus,
+textarea:focus,
+.form-control:focus {
+    color: rgba(0, 0, 0, 1);
+    border-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+select {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CgkJCQk8c3ZnIHdpZHRoPSI0MHB4IiBoZWlnaHQ9IjE1cHgiIHZpZXdCb3g9IjAgMCA0MCAxNSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+CgkJCQkgICAgPGRlZnM+PC9kZWZzPgoJCQkJICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHNrZXRjaDp0eXBlPSJNU1BhZ2UiPgoJCQkJICAgICAgICA8cGF0aCBkPSJNMjAsMTUgTDAsMTUgTDEwLDAgTDIwLDE1IFoiIGlkPSJUcmlhbmdsZS0xIiBmaWxsPSIjNjY2NjY2IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC4wMDAwMDAsIDcuNTAwMDAwKSByb3RhdGUoLTE4MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTAuMDAwMDAwLCAtNy41MDAwMDApICI+PC9wYXRoPgoJCQkJICAgIDwvZz4KCQkJCTwvc3ZnPg==) !important
+}
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6) !important
+}
+
+::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.6) !important
+}
+
+:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6) !important
+}
+
+:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.6) !important
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.6) !important
+}
+
+pre {
+    color: rgba(0, 0, 0, 1)
+}
+
+input[type=submit],
+input[type=button],
+button,
+.btn-primary,
+.vc_general.vc_btn3.vc_btn3.vc_btn3-style-btn-primary {
+    background-color: rgba(184, 157, 79, 1);
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(184, 157, 79, 1)
+}
+
+input[type=submit]:hover,
+input[type=submit]:active,
+input[type=button]:hover,
+input[type=button]:active,
+button:hover,
+button:active,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:active:hover,
+.vc_btn3.vc_btn3.vc_btn3-style-btn-primary:hover,
+.vc_general.vc_btn3.vc_btn3.vc_btn3-style-btn-outline-primary:hover {
+    background-color: rgb(164, 137, 59);
+    border-color: rgb(164, 137, 59)
+}
+
+.btn-link,
+.vc_general.vc_btn3.vc_btn3-style-btn-link {
+    color: rgba(184, 157, 79, 1)
+}
+
+.btn-link:hover,
+.vc_general.vc_btn3.vc_btn3-style-btn-link:hover {
+    color: rgb(164, 137, 59)
+}
+
+.btn-link::after,
+.vc_general.vc_btn3.vc_btn3-style-btn-link::after {
+    background-color: rgba(184, 157, 79, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+.btn-link:hover::after {
+    background-color: rgb(164, 137, 59)
+}
+
+.btn-outline-primary,
+.vc_general.vc_btn3.vc_btn3.vc_btn3-style-btn-outline-primary {
+    border-color: rgba(184, 157, 79, 1);
+    color: rgba(184, 157, 79, 1)
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary:hover,
+.btn-outline-primary:hover:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:disabled,
+.btn-outline-primary:disabled:hover,
+.vc_general.vc_btn3.vc_btn3.vc_btn3-style-btn-outline-primary:hover {
+    border-color: rgba(184, 157, 79, 1);
+    background-color: rgba(184, 157, 79, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+.color-primary,
+.color--primary {
+    color: rgba(184, 157, 79, 1)
+}
+
+.color-primary-inverted,
+.color--primary-inverted {
+    color: rgba(0, 0, 0, 1)
+}
+
+.color-primary--hover {
+    color: rgb(164, 137, 59)
+}
+
+.color-text,
+.color--text {
+    color: rgba(0, 0, 0, 1)
+}
+
+.color-text-inverted,
+.color--text-inverted {
+    color: rgba(255, 255, 255, 1)
+}
+
+.color-bg,
+.vc_single_image-wrapper.ct-lightbox-video,
+.color--bg {
+    color: rgba(255, 255, 255, 1)
+}
+
+.color-bg-inverted,
+.color--bg-inverted {
+    color: rgba(0, 0, 0, 1)
+}
+
+.color--h1 {
+    color: rgba(0, 0, 0, 1)
+}
+
+.color--h2 {
+    color: rgba(0, 0, 0, 1)
+}
+
+.color--h3 {
+    color: rgba(184, 157, 79, 1)
+}
+
+.color--h4 {
+    color: rgba(184, 157, 79, 1)
+}
+
+.color-bg-bg,
+.bg-color--bg {
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.color-bg-bg--75,
+.bg-color--bg-75 {
+    background-color: rgba(255, 255, 255, 0.75)
+}
+
+.color-bg-primary,
+.bg-color--primary {
+    background-color: rgba(184, 157, 79, 1)
+}
+
+.color-bg-text,
+.bg-color--test {
+    background-color: rgba(0, 0, 0, 1)
+}
+
+.special-title::after {
+    border-color: rgba(184, 157, 79, 1)
+}
+
+.ct-header {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.95)
+}
+
+@media(min-width:576px) {
+    .ct-header {
+        background-color: rgba(255, 255, 255, 0)
+    }
+}
+
+.ct-header__logo-nav a {
+    color: rgba(0, 0, 0, 1)
+}
+
+.ct-header__logo-nav a:hover {
+    color: rgba(0, 0, 0, 0.65)
+}
+
+.ct-menu--inverted .ct-header__wrapper:not(.ct-header__wrapper--stuck) .ct-header__logo-nav ul:not(.sub-menu)>li>a {
+    color: rgba(255, 255, 255, 1)
+}
+
+.ct-menu--inverted .ct-header__wrapper:not(.ct-header__wrapper--stuck) .ct-header__logo-nav ul:not(.sub-menu)>li>a:hover {
+    color: rgba(255, 255, 255, 0.85)
+}
+
+.ct-header__logo-nav .current-menu-ancestor>a,
+.ct-header__logo-nav .current-menu-parent>a,
+.ct-header__logo-nav .current-menu-item>a,
+.ct-header__logo-nav .current-page-parent>a,
+.ct-header__logo-nav .current_page_parent>a,
+.ct-header__logo-nav .current_page_ancestor>a,
+.ct-header__logo-nav .current-page-ancestor>a,
+.ct-header__logo-nav .current_page_item>a {
+    color: rgba(184, 157, 79, 1)
+}
+
+#ct-main-nav::before {
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+.ct-main-navigation .sub-menu,
+.ct-main-navigation .children {
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.ct-main-navigation .sub-menu a,
+.ct-main-navigation .children a {
+    color: rgba(0, 0, 0, 1)
+}
+
+.ct-main-navigation .sub-menu a:hover,
+.ct-main-navigation .children a:hover {
+    color: rgba(184, 157, 79, 1)
+}
+
+.ct-header__wrapper--stuck {
+    background-color: rgba(255, 255, 255, 0.98)
+}
+
+.color-primary,
+.wpml-switcher .active,
+#ct-header__hero-navigator>a,
+.section-bullets,
+.special-title small:last-child,
+#ct-scroll-top {
+    color: rgba(184, 157, 79, 1)
+}
+
+.ct-layout--without-slider .ct-header__hero {
+    color: rgba(0, 0, 0, 1)
+}
+
+.ct-hero--without-image .ct-header__hero::after {
+    background-color: rgba(246, 246, 246, 1)
+}
+
+.ct-header__main-heading small,
+.ct-header__main-heading span,
+.ct-header__main-heading-excerpt {
+    color: rgba(184, 157, 79, 1)
+}
+
+.ct-header__main-heading-title h1,
+.ct-header__main-heading-title .h1 {
+    color: rgba(0, 0, 0, 1)
+}
+
+.img-frame-small,
+.img-frame-large {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1)
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small {
+    color: rgba(184, 157, 79, 1)
+}
+
+.ct-social-box .fa-boxed.fa-envelope {
+    color: rgba(0, 0, 0, 1)
+}
+
+.ct-social-box .fa-boxed.fa-envelope::after {
+    background-color: rgba(184, 157, 79, 1)
+}
+
+h4.media-heading {
+    color: rgba(184, 157, 79, 1)
+}
+
+.comment-reply-link,
+.btn-outline-primary {
+    color: rgba(184, 157, 79, 1);
+    border-color: rgba(184, 157, 79, 1)
+}
+
+.comment-reply-link:hover,
+.btn-outline-primary:hover,
+.btn-outline-primary:hover:active,
+.btn-outline-primary:active {
+    background-color: rgba(184, 157, 79, 1);
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(184, 157, 79, 1)
+}
+
+.media.comment {
+    border-color: rgba(0, 0, 0, 0.125)
+}
+
+.ct-posts .ct-post.format-quote .ct-post__content {
+    background-color: rgba(184, 157, 79, 1)
+}
+
+.ct-posts .ct-post.format-quote blockquote,
+.ct-posts .ct-post.format-quote blockquote cite,
+.ct-posts .ct-post.format-quote blockquote cite::before {
+    color: rgba(255, 255, 255, 1)
+}
+
+.ct-posts .ct-post.format-link {
+    border-color: rgba(0, 0, 0, 0.125)
+}
+
+.pagination .current {
+    color: rgba(255, 255, 255, 1)
+}
+
+.pagination .nav-links .current::before {
+    background-color: rgba(184, 157, 79, 1)
+}
+
+.pagination .current {
+    color: rgba(255, 255, 255, 1)
+}
+
+.pagination a {
+    color: rgb(164, 137, 59)
+}
+
+.pagination .nav-links .prev,
+.pagination .nav-links .next {
+    border-color: rgba(184, 157, 79, 1)
+}
+
+.ct-sidebar .widget_archive,
+.ct-sidebar .widget_categories {
+    color: rgba(0, 0, 0, 0.35)
+}
+
+.ct-sidebar ul li::before {
+    color: rgba(0, 0, 0, 1)
+}
+
+.ct-sidebar .sidebar-widget .widget-title::after {
+    border-color: rgba(0, 0, 0, 1)
+}
+
+.ct-sidebar .sidebar-widget .widget-title,
+.ct-sidebar .sidebar-widget .widget-title a {
+    color: rgba(184, 157, 79, 1)
+}
+
+.ct-sidebar .sidebar-widget.widget_tag_cloud .tag {
+    color: rgba(255, 255, 255, 1)
+}
+
+.ct-sidebar .sidebar-widget.widget_tag_cloud .tag::before {
+    background-color: rgba(0, 0, 0, 1)
+}
+
+.ct-sidebar .sidebar-widget.widget_tag_cloud .tag.x-large::before {
+    background-color: rgba(184, 157, 79, 1)
+}
+
+#wp-calendar thead th,
+#wp-calendar tbody td {
+    border-color: rgba(0, 0, 0, 0.125)
+}
+
+.ct-footer {
+    background-color: rgba(1, 1, 0, 1);
+    color: rgba(167, 167, 167, 1)
+}
+
+.ct-footer a {
+    color: rgba(255, 255, 255, 1)
+}
+
+.ct-footer .widget-title {
+    color: rgba(255, 255, 255, 1)
+}
+
+blockquote,
+blockquote cite::before,
+q,
+q cite::before {
+    color: rgba(184, 157, 79, 1)
+}
+
+blockquote cite,
+q site {
+    color: rgba(0, 0, 0, 1)
+}
+
+table {
+    border-color: rgba(0, 0, 0, 0.15)
+}
+
+table thead th {
+    color: rgba(184, 157, 79, 1)
+}
+
+.ct-vc-recent-news-post {
+    border-color: rgba(0, 0, 0, 0.125)
+}
+
+.ct-vc-recent-news-post .ti-calendar {
+    color: rgba(184, 157, 79, 1)
+}
+
+.ct-vc-services-carousel__item-title {
+    color: rgba(184, 157, 79, 1)
+}
+
+.ct-vc-services-carousel__item {
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.wcs-timetable--week .wcs-class__title,
+.wcs-timetable--agenda .wcs-class__title,
+.wcs-timetable--compact-list .wcs-class__title {
+    color: rgba(51, 51, 51, 1)
+}
+
+.wcs-timetable--carousel .wcs-class__title {
+    color: rgba(51, 51, 51, 1) !important
+}
+
+.wcs-timetable__carousel .wcs-class__title::after,
+.wcs-timetable__carousel .owl-prev,
+.wcs-timetable__carousel .owl-next {
+    border-color: rgba(184, 157, 79, 1);
+    color: rgba(184, 157, 79, 1)
+}
+
+.wcs-timetable--carousel .wcs-class__title small {
+    color: rgba(0, 0, 0, 1)
+}
+
+body .wcs-timetable--carousel .wcs-btn--action {
+    background-color: rgba(184, 157, 79, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+body .wcs-timetable--carousel .wcs-btn--action:hover {
+    background-color: rgb(164, 137, 59);
+    color: rgba(255, 255, 255, 1)
+}
+
+.wcs-timetable__container .wcs-filters__filter-wrapper:hover {
+    color: rgba(184, 157, 79, 1) !important
+}
+
+.wcs-timetable--compact-list .wcs-day__wrapper {
+    background-color: rgba(184, 157, 79, 0.8);
+    color: rgba(255, 255, 255, 1)
+}
+
+.wcs-timetable__week,
+.wcs-timetable__week .wcs-day,
+.wcs-timetable__week .wcs-class,
+.wcs-timetable__week .wcs-day__title {
+    border-color: rgba(0, 0, 0, 0.125)
+}
+
+.wcs-timetable__week .wcs-class {
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.wcs-timetable__week .wcs-day__title,
+.wcs-timetable__week .wcs-class__instructors::before {
+    color: rgba(184, 157, 79, 1) !important
+}
+
+.wcs-timetable__week .wcs-day__title::before {
+    background-color: rgba(0, 0, 0, 1)
+}
+
+.wcs-timetable__week .wcs-class__title::after {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(184, 157, 79, 1)
+}
+
+.wcs-filters__title {
+    color: rgba(184, 157, 79, 1) !important
+}
+
+.xtd-carousel-mini,
+.xtd-carousel-mini .owl-image-link:hover::after {
+    color: rgba(184, 157, 79, 1) !important
+}
+
+.xtd-carousel-mini .onclick-video_link a::before {
+    background-color: rgba(184, 157, 79, 0.85)
+}
+
+.xtd-carousel-mini .onclick-video_link a::after {
+    color: rgba(255, 255, 255, 1)
+}
+
+.xtd-carousel-mini .onclick-video_link a:hover::after {
+    background-color: rgba(184, 157, 79, 0.98)
+}
+
+.wcs-modal:not(.wcs-modal--large) .wcs-modal__title,
+.wcs-modal:not(.wcs-modal--large) .wcs-modal__close {
+    color: rgba(255, 255, 255, 1)
+}
+
+.wcs-modal:not(.wcs-modal--large) .wcs-btn--action.wcs-btn--action {
+    background-color: rgba(184, 157, 79, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+.wcs-modal:not(.wcs-modal--large) .wcs-btn--action.wcs-btn--action:hover {
+    background-color: rgb(164, 137, 59);
+    color: rgba(255, 255, 255, 1)
+}
+
+.wcs-timetable--agenda .wcs-timetable__agenda-data .wcs-class__duration::after {
+    border-color: rgba(184, 157, 79, 1)
+}
+
+.wcs-timetable--agenda .wcs-timetable__agenda-data .wcs-class__time,
+.wcs-timetable--compact-list .wcs-class__time {
+    color: rgba(0, 0, 0, 0.75)
+}
+
+.wcs-modal:not(.wcs-modal--large),
+div.pp_overlay.pp_overlay {
+    background-color: rgba(184, 157, 79, 0.97) !important
+}
+
+.mfp-bg {
+    background-color: rgba(255, 255, 255, 0.95) !important
+}
+
+.owl-image-link::before {
+    color: rgba(255, 255, 255, 1)
+}
+
+.owl-nav .owl-prev::before,
+.owl-nav .owl-next::after,
+.owl-dots {
+    color: rgba(184, 157, 79, 1) !important
+}
+
+.xtd-ninja-modal-container {
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.xtd-recent-posts__post__date::before {
+    color: rgba(184, 157, 79, 1)
+}
+
+.xtd-gmap-info {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1)
+}
+
+.fa-boxed {
+    background-color: rgba(184, 157, 79, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+.xtd-timeline__item::before {
+    color: rgba(184, 157, 79, 1)
+}
+
+.xtd-timeline__item::after {
+    background-color: rgba(184, 157, 79, 1)
+}
+
+.xtd-offset-frame::before {
+    color: rgba(184, 157, 79, 1)
+}
+
+.xtd-timeline::before {
+    border-color: rgba(184, 157, 79, 1)
+}
+
+.ct-layout--fixed .container-fluid {
+    max-width: 1366px
+}
+
+@media(min-width:1367px) {
+    .bullets-container,
+    #ct-header__hero-navigator {
+        display: block
+    }
+}
+
+.ct-header {
+    padding: 1.25rem 0 1.25rem
+}
+
+.ct-header__main-heading .container-fluid {
+    flex-basis: 1366px;
+    -webkit-flex-basis: 1366px;
+    -moz-flex-basis: 1366px
+}
+
+.ct-header__main-heading-title {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem
+}
+
+@media(max-width:1199px) {
+    #awwwards {
+        display: none !important
+    }
+}
