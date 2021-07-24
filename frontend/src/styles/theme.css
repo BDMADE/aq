@@ -1,0 +1,10 @@
+.ct-menu--floating .ct-header {
+    position: relative !important;
+}
+.ct-site {
+    min-height: 100vh !important;
+}
+
+.ct-header::after {
+    border-top: none !important;
+}
