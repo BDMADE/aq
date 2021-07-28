@@ -14,22 +14,18 @@ import Contact from "../pages/Contact";
 const Body = () => {
     return (
         <div className="ct-content">
-            <div className="container-fluid">
-                <article id="post-2" className="ct-page__entry-content post-2 page type-page status-publish hentry">
-                    <Switch>
-                        <Route exact path='/' component={Homepage} />
-                        <Route path='/memberships' component={Memberships} />
-                        <Route path='/board-of-directors' component={Directors} />
-                        <Route path='/photo-gallery' component={Gallery} />
-                        <Route path='/support-us' component={Support} />
-                        <Route path='/events' component={Events} />
-                        <Route path='/exhibitions' component={Exhibitions} />
-                        <Route path='/artists' component={Artists} />
-                        <Route path='/archive' component={Archive} />
-                        <Route path='/contact-us' component={Contact} />
-                    </Switch>
-                </article>
-            </div>
+            <Switch>
+                <Route exact path='/' component={Homepage} />
+                <Route path='/memberships' component={Memberships} />
+                <Route path='/board-of-directors' component={Directors} />
+                <Route path='/photo-gallery' component={Gallery} />
+                <Route path='/support-us' component={Support} />
+                <Route path='/events' component={Events} />
+                <Route path='/exhibitions' component={Exhibitions} />
+                <Route path='/artists' component={Artists} />
+                <Route path='/archive' component={Archive} />
+                <Route path='/contact-us' component={Contact} />
+            </Switch>
         </div>
     );
 };

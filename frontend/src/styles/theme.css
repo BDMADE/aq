@@ -1,5 +1,5 @@
-.ct-menu--floating .ct-header {
-    position: relative !important;
+.ct-header {
+    position: absolute !important;
 }
 .ct-site {
     min-height: 100vh !important;
