@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoBlack from '../images/branding/logo-black.png';
-import logoBlackSmall from '../images/branding/logo-black-small.png';
+import logoWhite from '../images/branding/logo-white.png';
+import logoWhiteSmall from '../images/branding/logo-white-small.png';
 
 const Header = () => {
     return (
@@ -11,7 +11,7 @@ const Header = () => {
                     <div className="ct-header__toolbar"/>
                     <div className="ct-header__logo-nav">
                         <Link to="/" className="ct-header__logo">
-                            <img className="ct-logo__image" alt="Art Quest Canada" src={logoBlack} srcSet={logoBlackSmall}/>
+                            <img className="ct-logo__image" alt="Art Quest Canada" src={logoWhite} srcSet={logoWhiteSmall}/>
                         </Link>
                         <label id="ct-main-nav__toggle-navigation" htmlFor="ct-main-nav__toggle-navigation-main">Menu <i className="ti-align-justify" /></label>
                         <div id="ct-main-nav">
