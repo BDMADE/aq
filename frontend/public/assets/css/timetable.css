@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@import "../libs/owlcarousel/css/owl.carousel.min.css";
-@import "../libs/owlcarousel/css/owl.theme.default.min.css";
-@import "../libs/ladda/css/ladda-themeless.min.css";
-@import "../libs/themify/themify-icons.css";
 .wcs-timetable__container {
     position: relative;
     min-height: 12.5vh;
