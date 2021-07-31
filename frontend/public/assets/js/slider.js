@@ -1,4 +1,4 @@
-const $ = window.jQuery;
+var $ = window.jQuery;
 $( document ).ready(function() {
     (function($) {
         "use strict";
