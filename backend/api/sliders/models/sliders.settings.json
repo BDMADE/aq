@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "slider_collections",
   "info": {
-    "name": "Sliders"
+    "name": "sliders",
+    "description": ""
   },
   "options": {
     "increments": true,
