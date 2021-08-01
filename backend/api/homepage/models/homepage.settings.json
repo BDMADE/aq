@@ -12,40 +12,46 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Seo": {
+    "seo": {
       "type": "component",
       "repeatable": false,
       "component": "meta.meta-data",
       "required": true
     },
-    "Slider": {
+    "sliders": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "Exhibitions": {
+    "exhibitions": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "Details": {
+    "details": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "Events": {
+    "events": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "FeaturedCollection": {
+    "featuredCollection": {
       "type": "boolean",
       "default": false,
       "required": true
     },
-    "PhotoGallery": {
+    "photoGallery": {
       "type": "boolean",
       "default": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

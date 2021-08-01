@@ -3,7 +3,9 @@ import { gql } from "@apollo/client";
 const GET_HOMEPAGE_QUERY = gql`
     {
         homepage {
-            Seo {
+            title
+            description
+            seo {
                 metaTitle
                 metaDescription
                 twitterCardType
@@ -11,14 +13,14 @@ const GET_HOMEPAGE_QUERY = gql`
                 shareImage {
                     url
                 }
-            }
 
-            Slider
-            Exhibitions
-            Details
-            Events
-            FeaturedCollection
-            PhotoGallery
+            }
+            sliders
+            exhibitions
+            details
+            events
+            featuredCollection
+            photoGallery
         }
     }
 `;

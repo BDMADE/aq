@@ -313,18 +313,18 @@
       "Homepage": {
         "required": [
           "id",
-          "Seo",
-          "Slider",
-          "Exhibitions",
-          "Details",
-          "Events",
-          "FeaturedCollection"
+          "seo",
+          "sliders",
+          "exhibitions",
+          "details",
+          "events",
+          "featuredCollection"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Seo": {
+          "seo": {
             "type": "object",
             "required": [
               "id",
@@ -426,29 +426,35 @@
               }
             }
           },
-          "Slider": {
+          "sliders": {
             "type": "boolean",
             "default": true
           },
-          "Exhibitions": {
+          "exhibitions": {
             "type": "boolean",
             "default": true
           },
-          "Details": {
+          "details": {
             "type": "boolean",
             "default": true
           },
-          "Events": {
+          "events": {
             "type": "boolean",
             "default": true
           },
-          "FeaturedCollection": {
+          "featuredCollection": {
             "type": "boolean",
             "default": false
           },
-          "PhotoGallery": {
+          "photoGallery": {
             "type": "boolean",
             "default": true
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -458,15 +464,15 @@
       },
       "NewHomepage": {
         "required": [
-          "Seo",
-          "Slider",
-          "Exhibitions",
-          "Details",
-          "Events",
-          "FeaturedCollection"
+          "seo",
+          "sliders",
+          "exhibitions",
+          "details",
+          "events",
+          "featuredCollection"
         ],
         "properties": {
-          "Seo": {
+          "seo": {
             "type": "object",
             "required": [
               "id",
@@ -568,29 +574,35 @@
               }
             }
           },
-          "Slider": {
+          "sliders": {
             "type": "boolean",
             "default": true
           },
-          "Exhibitions": {
+          "exhibitions": {
             "type": "boolean",
             "default": true
           },
-          "Details": {
+          "details": {
             "type": "boolean",
             "default": true
           },
-          "Events": {
+          "events": {
             "type": "boolean",
             "default": true
           },
-          "FeaturedCollection": {
+          "featuredCollection": {
             "type": "boolean",
             "default": false
           },
-          "PhotoGallery": {
+          "photoGallery": {
             "type": "boolean",
             "default": true
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
