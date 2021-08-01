@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_home",
+  "info": {
+    "name": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-data",
+      "required": true
+    },
+    "Slider": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Exhibitions": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Details": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Events": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "FeaturedCollection": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "PhotoGallery": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
