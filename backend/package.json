@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -13,18 +13,18 @@
   "dependencies": {
     "knex": "0.21.18",
     "mysql": "2.18.1",
-    "strapi": "3.6.5",
-    "strapi-admin": "3.6.5",
-    "strapi-connector-bookshelf": "3.6.5",
-    "strapi-plugin-content-manager": "3.6.5",
-    "strapi-plugin-content-type-builder": "3.6.5",
-    "strapi-plugin-documentation": "3.6.5",
-    "strapi-plugin-email": "3.6.5",
-    "strapi-plugin-graphql": "3.6.5",
-    "strapi-plugin-i18n": "3.6.5",
-    "strapi-plugin-upload": "3.6.5",
-    "strapi-plugin-users-permissions": "3.6.5",
-    "strapi-utils": "3.6.5"
+    "strapi": "3.6.6",
+    "strapi-admin": "3.6.6",
+    "strapi-connector-bookshelf": "3.6.6",
+    "strapi-plugin-content-manager": "3.6.6",
+    "strapi-plugin-content-type-builder": "3.6.6",
+    "strapi-plugin-documentation": "3.6.6",
+    "strapi-plugin-email": "3.6.6",
+    "strapi-plugin-graphql": "3.6.6",
+    "strapi-plugin-i18n": "3.6.6",
+    "strapi-plugin-upload": "3.6.6",
+    "strapi-plugin-users-permissions": "3.6.6",
+    "strapi-utils": "3.6.6"
   },
   "author": {
     "name": "A Strapi developer"
