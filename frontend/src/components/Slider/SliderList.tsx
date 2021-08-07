@@ -14,7 +14,7 @@ const SliderList = () => {
                 <>
                     { data.sliders.map((item: any)=> (
                         <div key={item.id}>
-                            <Slider name={ item.name } image={item.image[0].url}/>
+                            <Slider name={ item.name } image={ item.image[0].url }/>
                         </div>
                     ))  }
                 </>
