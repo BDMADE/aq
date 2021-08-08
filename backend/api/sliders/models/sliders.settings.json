@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "slider_collections",
+  "collectionName": "collection_sliders",
   "info": {
     "name": "sliders",
-    "description": ""
+    "description": "This is sliders collection."
   },
   "options": {
     "increments": true,
