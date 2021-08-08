@@ -8,7 +8,15 @@ type Props = {
 
 const Slider = (props: Props) => {
     const js_url = `${process.env.REACT_APP_FRONTEND_URL}/assets/js/slider.js`;
-    let image_url = `url(${process.env.REACT_APP_BACKEND_URL}${ props.image })`;
+    let image_url;
+
+    if(process.env.NODE_ENV === 'development') {
+        image_url = `url(${process.env.REACT_APP_BACKEND_URL}${ props.image })`;
+    } else {
+        image_url = `url(${ props.image })`;
+    }
+
+
     // loading slider js after loading the dom
     useScript(js_url);
 
