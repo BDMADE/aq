@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collection_tags",
+  "info": {
+    "name": "tags",
+    "description": "This is Tags collection"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "exhibitions": {
+      "via": "tags",
+      "collection": "exhibitions"
+    }
+  }
+}
