@@ -1037,3 +1037,6 @@ div.pp_overlay.pp_overlay {
     -ms-touch-action: pan-y;
     touch-action: pan-y;
 }
+.wcs-modal-call-height {
+    height: 202px !important;
+}

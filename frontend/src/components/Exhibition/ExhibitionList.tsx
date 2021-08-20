@@ -30,7 +30,7 @@ const ExhibitionList = (props: Props) => {
             <div className="wcs-class vue-element">
                 <div className="wcs-class__image">
                     <div className="responsive-image">
-                        <img alt={props.title} src={image_url} className="wcs-modal-call"/>
+                        <img alt={props.title} src={image_url} className="wcs-modal-call wcs-modal-call-height"/>
                     </div>
                 </div>
                 <div className="wcs-class__title wcs-modal-call h2">{title}</div>
