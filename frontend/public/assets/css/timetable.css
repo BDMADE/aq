@@ -2566,6 +2566,14 @@
     display: none
 }
 
+.wcs-timetable__carousel.owl-carousel.owl-carousel .owl-stage.owl-stage-transform {
+    transform: translate3d(-658px, 0px, 0px);
+    transition: all 0s ease 0s;
+    width: 2054px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .wcs-timetable__carousel.owl-carousel .owl-stage-outer {
     max-width: 100%;
     min-width: 0
@@ -2576,6 +2584,11 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: flex
+}
+
+.wcs-timetable__carousel.owl-carousel.owl-carousel .owl-item.owl-item-display {
+    width: 269px;
+    margin-right: 60px;
 }
 
 .wcs-timetable__carousel .wcs-spacer {
