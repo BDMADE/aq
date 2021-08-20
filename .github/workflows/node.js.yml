@@ -49,6 +49,9 @@ jobs:
       - name: INSTALL PROJECT DEPENDENCIES (YARN)
         run: yarn install
 
+      - name: UPDATE THE BROWSERLIST
+        run: yarn add browserslist@latest --update-db
+
       - name: BUILD THE WEBPACK
         run: yarn build --clean
 
