@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/exhibitions",
+      "handler": "exhibitions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/exhibitions/count",
+      "handler": "exhibitions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/exhibitions/:id",
+      "handler": "exhibitions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/exhibitions",
+      "handler": "exhibitions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/exhibitions/:id",
+      "handler": "exhibitions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/exhibitions/:id",
+      "handler": "exhibitions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

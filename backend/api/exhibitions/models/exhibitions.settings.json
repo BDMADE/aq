@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collection_exhibitions",
+  "info": {
+    "name": "exhibitions",
+    "description": "This is Exhibitions collection"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "start": {
+      "type": "datetime",
+      "required": true
+    },
+    "end": {
+      "type": "datetime"
+    },
+    "venue": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "current",
+        "past",
+        "future"
+      ]
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "exhibitions",
+      "dominant": true
+    }
+  }
+}
