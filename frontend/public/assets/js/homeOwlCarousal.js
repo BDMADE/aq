@@ -14,6 +14,7 @@ $('.owl-carousel').owlCarousel({
             nav:true,
             navText: ["", ""],
             loop:true,
+            autoHeight:true,
             dots: false
         }
     },
