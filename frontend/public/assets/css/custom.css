@@ -1040,3 +1040,15 @@ div.pp_overlay.pp_overlay {
 .wcs-modal-call-height {
     height: 202px !important;
 }
+
+.wcs-timetable__carousel.owl-carousel.owl-carousel .owl-item.owl-item-display {
+    width: 315px !important;
+    margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+    .wcs-timetable__carousel.owl-carousel.owl-carousel .owl-item.owl-item-display {
+        width: 269px !important;
+        margin-right: 60px !important;
+    }
+}
