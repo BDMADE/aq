@@ -4,6 +4,7 @@ import { useQuery } from "@apollo/client";
 import GET_HOMEPAGE_QUERY from "../queries/pages/HomepageQuery";
 import Seo from "../components/Seo";
 import Details from "../components/Homepage/Details";
+import Exhibitions from "../components/Exhibition/Exhibitions";
 
 const Homepage = () => {
     let { loading, error, data } = useQuery(GET_HOMEPAGE_QUERY);
@@ -29,6 +30,7 @@ const Homepage = () => {
         { data.homepage.sliders && <SliderList /> }
         <div className="container-fluid">
             <article id="post-2" className="ct-page__entry-content post-2 page type-page status-publish hentry">
+                { data.homepage.exhibitions && <Exhibitions /> }
             <Details title={ title }   description={ description }/>
             </article>
         </div>
