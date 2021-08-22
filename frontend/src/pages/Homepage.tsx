@@ -11,10 +11,20 @@ const Homepage = () => {
     if(loading) return (<p>Loading..</p>);
     if(error) return(<h4>Error! `${error.message}`</h4>);
 
+    //TODO:: Have to use hook
+    let shareImageUrl: string | 'undefined' = data.homepage.seo.shareImage[0];
+    if (shareImageUrl !== undefined) {
+        if (process.env.NODE_ENV === 'development') {
+            shareImageUrl = `${process.env.REACT_APP_BACKEND_URL}${data.homepage.seo.shareImage[0].url}`;
+        } else {
+            shareImageUrl = `${data.membership.homepage.shareImage[0].url}`;
+        }
+    }
+
     // seo data start
     let metaTitle = data.homepage.seo.metaTitle;
     let metaDescription = data.homepage.seo.metaDescription;
-    let shareImage = `${process.env.REACT_APP_BACKEND_URL}` + data.homepage.seo.shareImage[0].url;
+    let shareImage = shareImageUrl;
     let twitterCard = data.homepage.seo.twitterCardType;
     let twitterUsername = data.homepage.seo.twitterUsername;
     // seo data end
@@ -26,11 +36,11 @@ const Homepage = () => {
 
     return (
         <>
-        <Seo title={ metaTitle } description={ metaDescription } image={ shareImage } twitterCardType={ twitterCard }   twitterUsername={ twitterUsername }/>
-        { data.homepage.sliders && <SliderList /> }
+        <Seo title={ metaTitle } description={ metaDescription } image={ shareImage } twitterCardType={ twitterCard } twitterUsername={ twitterUsername }/>
+        { data.homepage.settings.sliders && <SliderList /> }
         <div className="container-fluid">
             <article id="post-2" className="ct-page__entry-content post-2 page type-page status-publish hentry">
-                { data.homepage.exhibitions && <Exhibitions /> }
+                { data.homepage.settings.exhibitions && <Exhibitions /> }
             <Details title={ title }   description={ description }/>
             </article>
         </div>
