@@ -1,8 +1,9 @@
 {
   "collectionName": "component_metaData",
   "info": {
-    "name": "MetaData",
-    "icon": "globe-americas"
+    "name": "Meta data",
+    "icon": "globe-americas",
+    "description": ""
   },
   "options": {},
   "attributes": {
