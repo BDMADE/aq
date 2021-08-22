@@ -2,7 +2,8 @@ import React from "react";
 
 type Props = {
     title: string,
-    image: string
+    image: string,
+    visibleTitle: boolean
 }
 
 const Banner = (props: Props) => {
@@ -20,9 +21,7 @@ const Banner = (props: Props) => {
         }}>
             <div className="ct-header__main-heading">
                 <div className="container-fluid">
-                    <div className="ct-header__main-heading-title">
-                        <h1>{ props.title }</h1>
-                    </div>
+                    { props.visibleTitle && <div className="ct-header__main-heading-title"> <h1>{ props.title }</h1></div> }
                 </div>
             </div>
         </div>
