@@ -17,7 +17,7 @@ const Homepage = () => {
         if (process.env.NODE_ENV === 'development') {
             shareImageUrl = `${process.env.REACT_APP_BACKEND_URL}${data.homepage.seo.shareImage[0].url}`;
         } else {
-            shareImageUrl = `${data.membership.homepage.shareImage[0].url}`;
+            shareImageUrl = `${data.homepage.seo.shareImage[0].url}`;
         }
     }
 
