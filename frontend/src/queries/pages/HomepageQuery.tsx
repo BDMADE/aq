@@ -15,12 +15,14 @@ const GET_HOMEPAGE_QUERY = gql`
                 }
 
             }
-            sliders
-            exhibitions
-            details
-            events
-            featuredCollection
-            photoGallery
+            settings {
+              sliders
+              exhibitions
+              details
+              events
+              featured_collection
+              photo_gallery
+            }
         }
     }
 `;

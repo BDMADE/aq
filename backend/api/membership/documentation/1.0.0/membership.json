@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/api/homepage": {
+    "/api/membership": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Homepage"
+                    "$ref": "#/components/schemas/Membership"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Homepage"
+          "Membership"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Homepage"
+                  "$ref": "#/components/schemas/Membership"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Homepage"
+          "Membership"
         ],
         "requestBody": {
           "description": "",
@@ -247,7 +247,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewHomepage"
+                "$ref": "#/components/schemas/NewMembership"
               }
             }
           }
@@ -302,7 +302,7 @@
         },
         "summary": "",
         "tags": [
-          "Homepage"
+          "Membership"
         ],
         "parameters": []
       }
@@ -310,14 +310,22 @@
   },
   "components": {
     "schemas": {
-      "Homepage": {
+      "Membership": {
         "required": [
           "id",
+          "title",
+          "description",
           "seo",
           "settings"
         ],
         "properties": {
           "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           },
           "seo": {
@@ -422,50 +430,174 @@
               }
             }
           },
-          "title": {
-            "type": "string"
+          "banner": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
-          "description": {
+          "side_images": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "membership_form_link": {
             "type": "string"
           },
           "settings": {
             "type": "object",
             "required": [
               "id",
-              "sliders",
-              "exhibitions",
-              "details",
-              "events",
-              "featured_collection",
-              "photo_gallery"
+              "visible_title",
+              "visible_description",
+              "visible_side_images",
+              "visible_membership_form_link"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "sliders": {
+              "visible_title": {
                 "type": "boolean",
                 "default": true
               },
-              "exhibitions": {
+              "visible_description": {
                 "type": "boolean",
                 "default": true
               },
-              "details": {
+              "visible_side_images": {
                 "type": "boolean",
                 "default": true
               },
-              "events": {
+              "visible_membership_form_link": {
                 "type": "boolean",
                 "default": true
-              },
-              "featured_collection": {
-                "type": "boolean",
-                "default": false
-              },
-              "photo_gallery": {
-                "type": "boolean",
-                "default": false
               }
             }
           },
@@ -475,12 +607,20 @@
           }
         }
       },
-      "NewHomepage": {
+      "NewMembership": {
         "required": [
+          "title",
+          "description",
           "seo",
           "settings"
         ],
         "properties": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
           "seo": {
             "type": "object",
             "required": [
@@ -583,50 +723,37 @@
               }
             }
           },
-          "title": {
-            "type": "string"
-          },
-          "description": {
+          "membership_form_link": {
             "type": "string"
           },
           "settings": {
             "type": "object",
             "required": [
               "id",
-              "sliders",
-              "exhibitions",
-              "details",
-              "events",
-              "featured_collection",
-              "photo_gallery"
+              "visible_title",
+              "visible_description",
+              "visible_side_images",
+              "visible_membership_form_link"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "sliders": {
+              "visible_title": {
                 "type": "boolean",
                 "default": true
               },
-              "exhibitions": {
+              "visible_description": {
                 "type": "boolean",
                 "default": true
               },
-              "details": {
+              "visible_side_images": {
                 "type": "boolean",
                 "default": true
               },
-              "events": {
+              "visible_membership_form_link": {
                 "type": "boolean",
                 "default": true
-              },
-              "featured_collection": {
-                "type": "boolean",
-                "default": false
-              },
-              "photo_gallery": {
-                "type": "boolean",
-                "default": false
               }
             }
           },
@@ -646,7 +773,7 @@
   },
   "tags": [
     {
-      "name": "Homepage"
+      "name": "Membership"
     }
   ]
 }

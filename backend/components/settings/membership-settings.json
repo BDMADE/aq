@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_settings_membership",
+  "info": {
+    "name": "membership settings",
+    "icon": "city",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "visible_title": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visible_description": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visible_side_images": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visible_membership_form_link": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
