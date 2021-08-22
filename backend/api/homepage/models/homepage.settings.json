@@ -12,46 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,
       "component": "meta.meta-data",
       "required": true
     },
-    "sliders": {
-      "type": "boolean",
-      "default": true,
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.homepage-settings",
       "required": true
-    },
-    "exhibitions": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "details": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "events": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "featuredCollection": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "photoGallery": {
-      "type": "boolean",
-      "default": true
-    },
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "richtext"
     }
   }
 }
