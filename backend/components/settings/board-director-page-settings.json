@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_settings_board_director_page_settings",
+  "info": {
+    "name": "board director page settings",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "visible_title": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visible_current_directors": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visible_current_staff": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visible_past_directors": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

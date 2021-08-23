@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/board-director-page",
+      "handler": "board-director-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/board-director-page",
+      "handler": "board-director-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/board-director-page",
+      "handler": "board-director-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
