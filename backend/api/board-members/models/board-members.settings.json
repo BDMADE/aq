@@ -23,7 +23,7 @@
     "group": {
       "type": "enumeration",
       "enum": [
-        "director",
+        "member",
         "staff"
       ],
       "required": true

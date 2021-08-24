@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "page_membership",
   "info": {
-    "name": "membership",
+    "name": "membership page",
     "description": "membership page"
   },
   "options": {

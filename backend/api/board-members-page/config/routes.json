@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/board-director-page",
-      "handler": "board-director-page.find",
+      "path": "/board-members-page",
+      "handler": "board-members-page.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/board-director-page",
-      "handler": "board-director-page.update",
+      "path": "/board-members-page",
+      "handler": "board-members-page.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/board-director-page",
-      "handler": "board-director-page.delete",
+      "path": "/board-members-page",
+      "handler": "board-members-page.delete",
       "config": {
         "policies": []
       }

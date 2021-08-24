@@ -1,8 +1,9 @@
 {
-  "collectionName": "components_settings_board_director_page_settings",
+  "collectionName": "components_settings_board_member_page_settings",
   "info": {
-    "name": "board director page settings",
-    "icon": "angry"
+    "name": "board members page setting",
+    "icon": "baby",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,17 +12,12 @@
       "default": true,
       "required": true
     },
-    "visible_current_directors": {
+    "visible_members": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "visible_current_staff": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "visible_past_directors": {
+    "visible_staffs": {
       "type": "boolean",
       "default": true,
       "required": true

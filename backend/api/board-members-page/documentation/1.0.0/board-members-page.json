@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/board-director-page": {
+    "/board-members-page": {
       "get": {
         "deprecated": false,
-        "description": "Find all the board-director-page's records",
+        "description": "Find all the board-members-page's records",
         "responses": {
           "200": {
-            "description": "Retrieve board-director-page document(s)",
+            "description": "Retrieve board-members-page document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Board-director-page"
+          "Board-members-page"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single board-director-page record",
+        "description": "Update a single board-members-page record",
         "responses": {
           "200": {
-            "description": "Retrieve board-director-page document(s)",
+            "description": "Retrieve board-members-page document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Board-director-page"
+          "Board-members-page"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewBoard-director-page"
+                "$ref": "#/components/schemas/NewBoard-members-page"
               }
             }
           }
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single board-director-page record",
+        "description": "Delete a single board-members-page record",
         "responses": {
           "200": {
-            "description": "deletes a single board-director-page based on the ID supplied",
+            "description": "deletes a single board-members-page based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +307,7 @@
         },
         "summary": "",
         "tags": [
-          "Board-director-page"
+          "Board-members-page"
         ],
         "parameters": []
       }
@@ -315,13 +315,12 @@
   },
   "components": {
     "schemas": {
-      "Board-director-page": {
+      "Board-members-page": {
         "required": [
           "id",
           "title",
-          "seo",
-          "settings",
-          "banner"
+          "banner",
+          "settings"
         ],
         "properties": {
           "id": {
@@ -329,6 +328,73 @@
           },
           "title": {
             "type": "string"
+          },
+          "banner": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "seo": {
             "type": "object",
@@ -437,9 +503,8 @@
             "required": [
               "id",
               "visible_title",
-              "visible_current_directors",
-              "visible_current_staff",
-              "visible_past_directors"
+              "visible_members",
+              "visible_staffs"
             ],
             "properties": {
               "id": {
@@ -449,84 +514,13 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_current_directors": {
+              "visible_members": {
                 "type": "boolean",
                 "default": true
               },
-              "visible_current_staff": {
+              "visible_staffs": {
                 "type": "boolean",
                 "default": true
-              },
-              "visible_past_directors": {
-                "type": "boolean",
-                "default": true
-              }
-            }
-          },
-          "banner": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -536,10 +530,9 @@
           }
         }
       },
-      "NewBoard-director-page": {
+      "NewBoard-members-page": {
         "required": [
           "title",
-          "seo",
           "settings"
         ],
         "properties": {
@@ -653,9 +646,8 @@
             "required": [
               "id",
               "visible_title",
-              "visible_current_directors",
-              "visible_current_staff",
-              "visible_past_directors"
+              "visible_members",
+              "visible_staffs"
             ],
             "properties": {
               "id": {
@@ -665,15 +657,11 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_current_directors": {
+              "visible_members": {
                 "type": "boolean",
                 "default": true
               },
-              "visible_current_staff": {
-                "type": "boolean",
-                "default": true
-              },
-              "visible_past_directors": {
+              "visible_staffs": {
                 "type": "boolean",
                 "default": true
               }

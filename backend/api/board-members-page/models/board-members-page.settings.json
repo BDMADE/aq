@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "page_board_directors",
+  "collectionName": "page_board_members",
   "info": {
-    "name": "board director page",
+    "name": "board members page",
     "description": ""
   },
   "options": {
@@ -16,18 +16,6 @@
       "type": "string",
       "required": true
     },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "meta.meta-data",
-      "required": true
-    },
-    "settings": {
-      "type": "component",
-      "repeatable": false,
-      "component": "settings.board-director-page-settings",
-      "required": true
-    },
     "banner": {
       "model": "file",
       "via": "related",
@@ -37,6 +25,17 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-data"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.board-member-page-setting",
+      "required": true
     }
   }
 }

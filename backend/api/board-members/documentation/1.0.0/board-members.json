@@ -548,7 +548,7 @@
           "group": {
             "type": "string",
             "enum": [
-              "director",
+              "member",
               "staff"
             ]
           },
@@ -641,7 +641,7 @@
           "group": {
             "type": "string",
             "enum": [
-              "director",
+              "member",
               "staff"
             ]
           },
