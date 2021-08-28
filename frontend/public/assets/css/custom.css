@@ -1080,3 +1080,38 @@ body .xtd-offset-frame::before {
     right: 0;
     bottom: 0;
 }
+
+.xtd-person {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    -webkit-transition: all 120ms ease;
+    transition: all 120ms ease; }
+.xtd-person img,
+.xtd-person .xtd-person__image {
+    -webkit-transition: all 120ms ease;
+    transition: all 120ms ease; }
+.xtd-person a, .xtd-person a:hover {
+    text-decoration: none; }
+.xtd-person:hover {
+    -webkit-transform: translateY(-7.5%);
+    transform: translateY(-7.5%); }
+.xtd-person:hover .xtd-person__image.xtd-shadow--normal-light {
+    box-shadow: 1.45rem 1.75rem 1.75rem 0rem rgba(0, 0, 0, 0.32) !important; }
+.xtd-person:hover .xtd-person__image {
+    background-color: currentColor; }
+.xtd-person:hover img {
+    opacity: 0.45; }
+
+.xtd-person__title.h2 {
+    font-size: 140%;
+    margin-top: 2rem;
+    font-weight: bold;
+    letter-spacing: 0; }
+
+.xtd-person__title.h2 span.h4 {
+    display: block;
+    margin-top: .5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: .7rem; }

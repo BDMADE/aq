@@ -1,6 +1,6 @@
-// This hook is being used for loading image from backend.
+// This utils is being used for loading image from backend.
 
-const useImageUrl = (url: string) => {
+const getImageUrl = (url: any) => {
     let imageUrl: string;
 
     if(url !== undefined) {
@@ -15,4 +15,4 @@ const useImageUrl = (url: string) => {
     }
 }
 
-export default useImageUrl;
+export default getImageUrl;

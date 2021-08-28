@@ -1,13 +1,12 @@
 import React from 'react';
-import useImageUrl from "../../hooks/useImageUrl";
+import getImageUrl from "../../utils/getImageUrl";
 
 type Props = {
     image: string
 }
 
 const Details = (props: Props) => {
-    let slideImage: string = useImageUrl(props.image);
-
+    let slideImage: any = getImageUrl(props.image);
     return(
         <div className="wpb_single_image wpb_content_element vc_align_left xtd-offset-frame">
             <figure className="wpb_wrapper vc_figure">

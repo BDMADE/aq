@@ -6,6 +6,9 @@ const GET_MEMBERS_QUERY = gql`
             id
             name
             designation
+            image {
+                formats
+            }
             group
         }
     }
