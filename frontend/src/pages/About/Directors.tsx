@@ -26,6 +26,8 @@ const Directors = () => {
 
     // board Members page data settings
     let visibleTitle: boolean = data.boardMembersPage.settings.visible_title;
+    let visibleMembers: boolean = data.boardMembersPage.settings.visible_members;
+    let visibleStaffs: boolean = data.boardMembersPage.settings.visible_staffs;
 
     return (
         <>
@@ -33,8 +35,8 @@ const Directors = () => {
             <Banner title={ bannerTitle } image={ bannerUrl }  visibleTitle={visibleTitle} />
             <div className="container-fluid">
                 <article id="post-2" className="ct-page__entry-content post-2 page type-page status-publish hentry">
-                    <Members/>
-                    <Staffs/>
+                    { visibleMembers && <Members/> }
+                    { visibleStaffs && <Staffs/> }
                 </article>
             </div>
         </>
