@@ -26,7 +26,7 @@ const GET_MEMBERSHIP_QUERY = gql`
       visible_title
       visible_description      
       visible_side_images
-      visible_membership_form_link
+      visible_form_link
     }    
   }
 }   

@@ -39,7 +39,7 @@ return(
                     <>
                         { data.boardMembers.map((item: any)=> (
                             <div key={item.id}>
-                                <MemberList name={ item.name } designation={ item.designation} image={ item.image.formats.medium.url }/>
+                                <MemberList name={ item.name } designation={ item.designation} image={ item.image.formats.small.url }/>
                             </div>
                         ))  }
                     </>

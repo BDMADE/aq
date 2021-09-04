@@ -29,7 +29,7 @@ const Memberships = () => {
     let visibleTitle: boolean = data.membership.settings.visible_title;
     let visibleDescription: boolean = data.membership.settings.visible_description;
     let visibleSideImages: boolean = data.membership.settings.visible_side_images;
-    let visibleMembershipFormLink: boolean = data.membership.settings.visible_membership_form_link;
+    let visibleMembershipFormLink: boolean = data.membership.settings.visible_form_link;
 
     return (
         <>

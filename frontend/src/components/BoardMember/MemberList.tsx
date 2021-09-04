@@ -13,6 +13,7 @@ const MemberList = (props: Props) => {
         <div className="wpb_column vc_column_container vc_col-sm-4">
             <div className="xtd-person">
                 <div className="xtd-person__image color-primary xtd-shadow--normal-light">
+                    {/* TODO::We have to fix responsive image */}
                     <img width="660" height="440"
                          alt='missingImg'
                          className="attachment-large size-large" loading="lazy"
