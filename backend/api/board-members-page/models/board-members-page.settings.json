@@ -29,7 +29,8 @@
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "meta.meta-data"
+      "component": "meta.meta-data",
+      "required": true
     },
     "settings": {
       "type": "component",

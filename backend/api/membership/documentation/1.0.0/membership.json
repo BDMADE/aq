@@ -577,7 +577,7 @@
               "visible_title",
               "visible_description",
               "visible_side_images",
-              "visible_membership_form_link"
+              "visible_form_link"
             ],
             "properties": {
               "id": {
@@ -595,7 +595,7 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_membership_form_link": {
+              "visible_form_link": {
                 "type": "boolean",
                 "default": true
               }
@@ -733,7 +733,7 @@
               "visible_title",
               "visible_description",
               "visible_side_images",
-              "visible_membership_form_link"
+              "visible_form_link"
             ],
             "properties": {
               "id": {
@@ -751,7 +751,7 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_membership_form_link": {
+              "visible_form_link": {
                 "type": "boolean",
                 "default": true
               }

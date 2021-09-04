@@ -320,6 +320,7 @@
           "id",
           "title",
           "banner",
+          "seo",
           "settings"
         ],
         "properties": {
@@ -533,6 +534,7 @@
       "NewBoard-members-page": {
         "required": [
           "title",
+          "seo",
           "settings"
         ],
         "properties": {

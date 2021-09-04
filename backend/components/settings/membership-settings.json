@@ -22,7 +22,7 @@
       "default": true,
       "required": true
     },
-    "visible_membership_form_link": {
+    "visible_form_link": {
       "type": "boolean",
       "default": true,
       "required": true
