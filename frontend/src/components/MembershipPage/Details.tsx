@@ -15,7 +15,7 @@ const Details = (props: Props) => {
                 <div className="wpb_text_column wpb_content_element ">
                     <div className="wpb_wrapper lead">
                         { props.visibleDescription && <ReactMarkdown children={props.description}/> }
-                        { props.visibleMembershipFormLink && <a className="btn btn-lg btn-outline-primary" href={props.formLink}>Membership form</a> }
+                        { props.visibleMembershipFormLink && <a className="btn btn-lg btn-outline-primary" href={props.formLink}>Download the form</a> }
                     </div>
                 </div>
             </div>

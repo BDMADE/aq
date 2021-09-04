@@ -1,11 +1,11 @@
 import { gql } from "@apollo/client";
 
-const GET_MEMBERSHIP_QUERY = gql`
+const GET_DONATION_QUERY = gql`
 {
-  membership {    
+  donationPage {    
     title
     description
-    membership_form_link
+    donation_form_link
     banner {
       url
     }
@@ -26,10 +26,10 @@ const GET_MEMBERSHIP_QUERY = gql`
       visible_title
       visible_description      
       visible_side_images
-      visible_membership_form_link
+      visible_form_link
     }    
   }
 }   
 `;
 
-export default GET_MEMBERSHIP_QUERY;
+export default GET_DONATION_QUERY;
