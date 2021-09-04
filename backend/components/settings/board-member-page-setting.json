@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_settings_membership",
+  "collectionName": "components_settings_board_member_page_settings",
   "info": {
-    "name": "membership settings",
-    "icon": "city",
+    "name": "board members page setting",
+    "icon": "baby",
     "description": ""
   },
   "options": {},
@@ -12,17 +12,12 @@
       "default": true,
       "required": true
     },
-    "visible_description": {
+    "visible_members": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "visible_side_images": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "visible_form_link": {
+    "visible_staffs": {
       "type": "boolean",
       "default": true,
       "required": true

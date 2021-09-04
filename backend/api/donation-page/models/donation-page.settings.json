@@ -1,9 +1,9 @@
 {
   "kind": "singleType",
-  "collectionName": "page_membership",
+  "collectionName": "page_donation",
   "info": {
-    "name": "membership page",
-    "description": "membership page"
+    "name": "Donation Page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -33,7 +33,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "side_images": {
@@ -46,7 +46,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "membership_form_link": {
+    "donation_form_link": {
       "type": "string"
     },
     "settings": {

@@ -3,27 +3,20 @@ import Seo from "../../components/Seo";
 import {useQuery} from "@apollo/client";
 import GET_MEMBERSHIP_QUERY from "../../queries/pages/MembershipQuery";
 import Banner from "../../components/common/Banner";
-import Details from "../../components/Membership/Details";
-import SideImages from "../../components/Membership/SideImages";
+import Details from "../../components/MembershipPage/Details";
+import SideImages from "../../components/MembershipPage/SideImages";
+import getImageUrl from "../../utils/getImageUrl";
 
 const Memberships = () => {
     let { loading, error, data } = useQuery(GET_MEMBERSHIP_QUERY);
     if(loading) return (<p>Loading...</p>);
     if(error) return(<h4>Error!! `${error.message}`</h4>);
 
-    let shareImageUrl: string | 'undefined' = data.membership.seo.shareImage[0];
-    if(shareImageUrl !== undefined) {
-        if (process.env.NODE_ENV === 'development') {
-            shareImageUrl = `${process.env.REACT_APP_BACKEND_URL}${data.membership.seo.shareImage[0].url}`;
-        } else {
-            shareImageUrl = `${data.membership.seo.shareImage[0].url}`;
-        }
-    }
-
+    let shareImageUrl: any = getImageUrl(data.membership.seo.shareImage[0]);
     // seo data start
     let metaTitle: string = data.membership.seo.metaTitle;
     let metaDescription: string = data.membership.seo.metaDescription;
-    let shareImage: string = shareImageUrl;
+    let shareImage: any = shareImageUrl;
     let twitterCard: string = data.membership.seo.twitterCardType;
     let twitterUsername: string = data.membership.seo.twitterUsername;
 
@@ -36,7 +29,7 @@ const Memberships = () => {
     let visibleTitle: boolean = data.membership.settings.visible_title;
     let visibleDescription: boolean = data.membership.settings.visible_description;
     let visibleSideImages: boolean = data.membership.settings.visible_side_images;
-    let visibleMembershipFormLink: boolean = data.membership.settings.visible_membership_form_link;
+    let visibleMembershipFormLink: boolean = data.membership.settings.visible_form_link;
 
     return (
         <>
