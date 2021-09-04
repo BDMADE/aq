@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/04/2021 10:06:59 AM"
+    "x-generation-date": "09/04/2021 10:11:24 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -45,13 +45,13 @@
     }
   ],
   "paths": {
-    "/board-members-page": {
+    "/api/board-members-page": {
       "get": {
         "deprecated": false,
-        "description": "Find all the board-members-page's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve board-members-page document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -240,10 +240,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single board-members-page record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve board-members-page document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,10 +306,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single board-members-page record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single board-members-page based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {

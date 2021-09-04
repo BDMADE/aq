@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/board-members-page",
+      "path": "/api/board-members-page",
       "handler": "board-members-page.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "PUT",
-      "path": "/board-members-page",
+      "path": "/api/board-members-page",
       "handler": "board-members-page.update",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/board-members-page",
+      "path": "/api/board-members-page",
       "handler": "board-members-page.delete",
       "config": {
         "policies": []
