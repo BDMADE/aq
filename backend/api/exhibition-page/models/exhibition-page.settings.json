@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_exhibitions",
+  "info": {
+    "name": "Exhibitions Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-data",
+      "required": true
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.ceremony-settings",
+      "required": true
+    }
+  }
+}

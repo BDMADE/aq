@@ -1,5 +1,6 @@
 import React from "react";
 import useScript from "../../hooks/useScript";
+import useImageUrl from "../../hooks/useImageUrl";
 
 type Props = {
     title: string,
@@ -14,23 +15,17 @@ const ExhibitionList = (props: Props) => {
     useScript(owlJsUrl);
 
     let title = props.title;
-    let image_url;
-
-    if(process.env.NODE_ENV === 'development') {
-        image_url = `${process.env.REACT_APP_BACKEND_URL}${ props.image }`;
-    } else {
-        image_url = `${ props.image }`;
-    }
+    let image_url =  useImageUrl(props.image);
     let dateFormat = require("dateformat");
     let start_date =  dateFormat(props.start, "dd mmm, yyyy");
-    let end_date = dateFormat(props.end, "dd mmm, yyyy");;
+    let end_date = dateFormat(props.end, "dd mmm, yyyy");
 
     return(
         <div className="owl-item owl-item-display">
             <div className="wcs-class vue-element">
                 <div className="wcs-class__image">
                     <div className="responsive-image">
-                        <img alt={props.title} src={image_url} className="wcs-modal-call wcs-modal-call-height"/>
+                        <img alt={title} src={image_url} className="wcs-modal-call wcs-modal-call-height"/>
                     </div>
                 </div>
                 <div className="wcs-class__title wcs-modal-call h2">{title}</div>

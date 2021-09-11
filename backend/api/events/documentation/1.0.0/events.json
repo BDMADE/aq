@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/api/exhibitions": {
+    "/api/events": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exhibitions"
+                    "$ref": "#/components/schemas/Events"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Exhibitions"
+          "Events"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exhibitions"
+                  "$ref": "#/components/schemas/Events"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Exhibitions"
+          "Events"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewExhibitions"
+                "$ref": "#/components/schemas/NewEvents"
               }
             }
           }
         }
       }
     },
-    "/api/exhibitions/count": {
+    "/api/events/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Exhibitions"
+          "Events"
         ],
         "parameters": []
       }
     },
-    "/api/exhibitions/{id}": {
+    "/api/events/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exhibitions"
+                  "$ref": "#/components/schemas/Events"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Exhibitions"
+          "Events"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exhibitions"
+                  "$ref": "#/components/schemas/Events"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Exhibitions"
+          "Events"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewExhibitions"
+                "$ref": "#/components/schemas/NewEvents"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Exhibitions"
+          "Events"
         ],
         "parameters": [
           {
@@ -514,14 +514,14 @@
   },
   "components": {
     "schemas": {
-      "Exhibitions": {
+      "Events": {
         "required": [
           "id",
           "title",
-          "start",
+          "end",
           "venue",
-          "image",
-          "description"
+          "description",
+          "group"
         ],
         "properties": {
           "id": {
@@ -541,7 +541,7 @@
           "venue": {
             "type": "string"
           },
-          "image": {
+          "images": {
             "type": "array",
             "items": {
               "required": [
@@ -616,6 +616,7 @@
           },
           "group": {
             "type": "string",
+            "default": "current",
             "enum": [
               "current",
               "past",
@@ -666,12 +667,13 @@
           }
         }
       },
-      "NewExhibitions": {
+      "NewEvents": {
         "required": [
           "title",
-          "start",
+          "end",
           "venue",
-          "description"
+          "description",
+          "group"
         ],
         "properties": {
           "title": {
@@ -693,6 +695,7 @@
           },
           "group": {
             "type": "string",
+            "default": "current",
             "enum": [
               "current",
               "past",
@@ -721,7 +724,7 @@
   },
   "tags": [
     {
-      "name": "Exhibitions"
+      "name": "Events"
     }
   ]
 }
