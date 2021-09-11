@@ -588,6 +588,68 @@
               }
             }
           },
+          "events": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "end",
+                "venue",
+                "description",
+                "group"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "string"
+                },
+                "end": {
+                  "type": "string"
+                },
+                "venue": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "description": {
+                  "type": "string"
+                },
+                "group": {
+                  "type": "string",
+                  "enum": [
+                    "current",
+                    "past",
+                    "future"
+                  ]
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -603,6 +665,12 @@
             "type": "string"
           },
           "exhibitions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "events": {
             "type": "array",
             "items": {
               "type": "string"
