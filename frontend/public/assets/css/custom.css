@@ -1114,4 +1114,49 @@ body .xtd-offset-frame::before {
     margin-top: .5rem;
     font-weight: normal;
     letter-spacing: 1px;
-    font-size: .7rem; }
+    font-size: .7rem;
+}
+
+body .wcs-timetable__grid .wcs-class__inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.wcs-timetable__grid .wcs-class__inner {
+    margin: 0;
+    position: relative;
+    border-radius: inherit;
+    -webkit-transition: width 400ms;
+    transition: width 400ms;
+}
+
+.wcs-timetable__container * {
+    box-sizing: border-box;
+}
+
+.wcs-class__title.events.h2 {
+    font-size: 1.3rem;
+    margin-top: 25px;
+}
+
+.wcs-class__time.events.h5.color-primary {
+    margin-bottom: 50px;
+}
+
+li.wcs-day.wcs-day--visible:last-child {
+    margin-bottom: 6rem;
+}
+
+.wpb_column.vc_column_container.vc_col-sm-12 {
+    margin-top: 50px;
+}
+
+img.wcs-modal-call.xtd-shadow--normal-normal.wcs-fixed-height {
+    height: 18rem;
+    width: 30rem;
+}
