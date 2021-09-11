@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_dynamic_artist_feature_works",
+  "info": {
+    "name": "artistFeatureWork",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imagePosition": {
+      "type": "enumeration",
+      "enum": [
+        "Right",
+        "Left"
+      ],
+      "required": true,
+      "default": "Right"
+    }
+  }
+}
