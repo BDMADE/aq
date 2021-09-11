@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/exhibition-page",
+      "path": "/api/exhibition-page",
       "handler": "exhibition-page.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "PUT",
-      "path": "/exhibition-page",
+      "path": "/api/exhibition-page",
       "handler": "exhibition-page.update",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/exhibition-page",
+      "path": "/api/exhibition-page",
       "handler": "exhibition-page.delete",
       "config": {
         "policies": []

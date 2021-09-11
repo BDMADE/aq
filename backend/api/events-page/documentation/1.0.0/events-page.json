@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/events-page": {
+    "/api/events-page": {
       "get": {
         "deprecated": false,
-        "description": "Find all the events-page's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve events-page document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single events-page record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve events-page document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single events-page record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single events-page based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {

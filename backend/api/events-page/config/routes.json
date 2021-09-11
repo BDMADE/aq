@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/events-page",
+      "path": "/api/events-page",
       "handler": "events-page.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "PUT",
-      "path": "/events-page",
+      "path": "/api/events-page",
       "handler": "events-page.update",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/events-page",
+      "path": "/api/events-page",
       "handler": "events-page.delete",
       "config": {
         "policies": []

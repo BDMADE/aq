@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/events": {
+    "/api/events": {
       "get": {
         "deprecated": false,
-        "description": "Find all the events's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve events document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -194,10 +194,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new events record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve events document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -254,13 +254,13 @@
         }
       }
     },
-    "/events/count": {
+    "/api/events/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of events documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve events document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -311,13 +311,13 @@
         "parameters": []
       }
     },
-    "/events/{id}": {
+    "/api/events/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one events record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve events document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -376,10 +376,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single events record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve events document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single events record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single events based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
