@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_events",
+  "info": {
+    "name": "Events page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-data",
+      "required": true
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "settings.ceremony-settings"
+    }
+  }
+}
