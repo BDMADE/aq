@@ -22,14 +22,15 @@ const Header = () => {
                                         <ul className="sub-menu">
                                                 <li id="menu-item-143" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-143"><Link to="/memberships">Memberships</Link></li>
                                                 <li id="menu-item-144" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-144"><Link to="/board-of-directors">Board of Directors</Link></li>
-                                                <li id="menu-item-145" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-145"><Link to="/photo-gallery">Photo Gallery</Link></li>
+                                                {/*TODO:: Will update after finishing it*/}
+                                                {/*<li id="menu-item-145" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-145"><Link to="/photo-gallery">Photo Gallery</Link></li>*/}
                                                 <li id="menu-item-146" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-146"><Link to="/support-us">Support/Donations</Link></li>
                                             </ul>
                                         </li>
                                         <li id="menu-item-176" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><Link to="/events">Events</Link></li>
                                         <li id="menu-item-299" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><Link to="/exhibitions">Exhibitions</Link></li>
                                         <li id="menu-item-113" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><Link to="/artists">Artists</Link></li>
-                                        <li id="menu-item-109" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><Link to="/archive">Archive</Link></li>
+                                        {/*<li id="menu-item-109" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><Link to="/archive">Archive</Link></li>*/}
                                         <li id="menu-item-112" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><Link to="/contact-us">Contact Us</Link></li>
                                     </ul>
                                 </nav>
