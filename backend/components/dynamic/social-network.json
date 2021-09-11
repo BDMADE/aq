@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_dynamic_social_networks",
+  "info": {
+    "name": "socialNetwork",
+    "icon": "book-reader",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "iconName": {
+      "type": "string",
+      "required": true
+    },
+    "isVisible": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "default": "javascript:void(0)"
+    }
+  }
+}

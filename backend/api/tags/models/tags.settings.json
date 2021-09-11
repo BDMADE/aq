@@ -20,6 +20,10 @@
     "exhibitions": {
       "via": "tags",
       "collection": "exhibitions"
+    },
+    "events": {
+      "via": "tags",
+      "collection": "events"
     }
   }
 }

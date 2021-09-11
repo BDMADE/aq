@@ -2,7 +2,7 @@ import React from 'react';
 import Seo from "../../components/Seo";
 import {useQuery} from "@apollo/client";
 import GET_DONATION_QUERY from "../../queries/pages/DonationQuery";
-import Banner from "../../components/common/Banner";
+import Banner from "../../components/Common/Banner";
 import Details from "../../components/MembershipPage/Details";
 import SideImages from "../../components/MembershipPage/SideImages";
 import getImageUrl from "../../utils/getImageUrl";
