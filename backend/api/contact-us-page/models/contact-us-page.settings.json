@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_us_pages",
+  "info": {
+    "name": "Contact us Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-data",
+      "required": true
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.contact-page-settings",
+      "required": true
+    }
+  }
+}
