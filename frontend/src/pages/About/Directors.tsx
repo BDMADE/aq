@@ -2,7 +2,7 @@ import React from 'react';
 import Seo from "../../components/Seo";
 import {useQuery} from "@apollo/client";
 import GET_BOARD_MEMBERS_QUERY from "../../queries/pages/BoardMembersQuery";
-import Banner from "../../components/common/Banner";
+import Banner from "../../components/Common/Banner";
 import getImageUrl from "../../utils/getImageUrl";
 import Members from "../../components/BoardMember/Members";
 import Staffs from "../../components/BoardMember/Staffs";

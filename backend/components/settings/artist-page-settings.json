@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_settings_artist_page_settings",
+  "info": {
+    "name": "artist page settings",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "visibleTitle": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visibleArtists": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

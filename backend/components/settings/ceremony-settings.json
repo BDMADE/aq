@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_settings_ceremony_settings",
+  "info": {
+    "name": "Ceremony settings",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "visibleTitle": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visiblePresentCeremony": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visiblePastCeremony": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visibleFutureCeremony": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

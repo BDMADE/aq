@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collection_events",
+  "info": {
+    "name": "Events"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime",
+      "required": true
+    },
+    "venue": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "current",
+        "past",
+        "future"
+      ],
+      "default": "current",
+      "required": true
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "events",
+      "dominant": true
+    }
+  }
+}

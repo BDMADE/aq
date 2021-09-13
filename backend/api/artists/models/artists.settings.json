@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collection_artists",
+  "info": {
+    "name": "Artists",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "designation": {
+      "type": "string"
+    },
+    "quotes": {
+      "type": "text"
+    },
+    "works": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 100
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "Current",
+        "Archive"
+      ]
+    },
+    "fetaureWork": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dynamic.artist-feature-work"
+    }
+  }
+}
