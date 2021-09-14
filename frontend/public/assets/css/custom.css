@@ -436,7 +436,8 @@ button:active,
 
 .ct-header {
     color: rgba(0, 0, 0, 1);
-    background-color: rgba(255, 255, 255, 0.95)
+    /*background-color: rgba(255, 255, 255, 0.95)*/
+    background-color: transparent;
 }
 
 @media(min-width:576px) {
@@ -447,8 +448,33 @@ button:active,
 
 .ct-header__logo-nav a {
     /*color: rgba(0, 0, 0, 1)*/
-    color: #fff;
+    color: #000;
     font-weight: bold;
+}
+
+@media(min-width:576px) {
+    .ct-header__logo-nav a {
+        color: #fff;
+    }
+}
+
+#ct-main-nav__toggle-navigation {
+    color: #fff;
+}
+
+.ct-main-navigation .menu-item, .ct-main-navigation .page_item {
+    background-color: transparent;
+}
+
+.menu-item-no-link {
+    color: #000;
+    font-weight: bold;
+}
+
+@media(min-width:576px) {
+    .menu-item-no-link {
+        color: #fff;
+    }
 }
 
 .ct-header__logo-nav a:hover {
@@ -476,7 +502,8 @@ button:active,
 }
 
 #ct-main-nav::before {
-    background-color: rgba(255, 255, 255, 0.9)
+    /*background-color: rgba(255, 255, 255, 0.9)*/
+    background-color: #fff;
 }
 
 .ct-main-navigation .sub-menu,
@@ -1160,3 +1187,51 @@ img.wcs-modal-call.xtd-shadow--normal-normal.wcs-fixed-height {
     height: 18rem;
     width: 30rem;
 }
+
+.ct-main-navigation .menu-item-has-children > span::before,
+.ct-main-navigation .page_item_has_children > span::before {
+    content: "";
+    position: relative;
+    font-family: 'themify';
+    display: inline-block;
+    -webkit-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in
+;
+}
+.ct-main-navigation .menu-item-has-children > span::before,
+.ct-main-navigation .page_item_has_children > span::before {
+    float: right;
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+@media (min-width: 48em) {
+    .ct-main-navigation .menu-item-has-children > span::before,
+    .ct-main-navigation .page_item_has_children > span::before {
+        font-size: 0.5rem;
+        line-height: 2.25;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .ct-main-navigation .menu-item .menu-item-has-children > span::before,
+    .ct-main-navigation .page_item .page_item_has_children > span::before {
+        content: '\e649';
+        line-height: 2.2;
+    }
+}
+
+li#menu-item-114 {
+    color: #000;
+    font-weight: bold;
+}
+
+@media (min-width: 576px) {
+    li#menu-item-114 {
+        color: #fff;
+        margin-top: 4px;
+        font-weight: bold;
+    }
+}
+
+
