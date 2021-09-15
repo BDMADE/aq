@@ -1,5 +1,6 @@
 body {
-    font-family: 'Droid Serif', serif;
+    /*font-family: 'Droid Serif', serif;*/
+    font-family: -apple-system ,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-weight: normal;
     font-size: 0.875rem
 }
