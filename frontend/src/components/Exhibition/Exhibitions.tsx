@@ -21,8 +21,7 @@ const Exhibitions = () => {
                     <div className="wcs-timetable__wrapper">
                         <div data-id="1" id="wcs-app-1" className="wcs-timetable__container wcs-timetable--1">
                             <div className="wcs-timetable wcs-timetable--carousel">
-                                <div
-                                    className="wcs-timetable__carousel wcs-timetable__parent owl-carousel owl-loaded owl-drag">
+                                <div className="wcs-timetable__carousel wcs-timetable__parent owl-carousel owl-loaded owl-drag" id="exhibition-slider">
                                     <div className="owl-stage-outer">
                                         <div className="owl-stage owl-stage-transform">
                                             { data && (
