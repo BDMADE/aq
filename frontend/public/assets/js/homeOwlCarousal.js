@@ -1,4 +1,4 @@
-$('.owl-carousel').owlCarousel({
+$('#exhibition-slider').owlCarousel({
     loop:true,
     margin:10,
     responsiveClass:true,
