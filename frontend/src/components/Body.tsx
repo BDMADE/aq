@@ -10,6 +10,7 @@ import Exhibitions from "../pages/Exhibitions";
 import Artists from "../pages/Artists";
 // import Archive from "../pages/Archive";
 import Contact from "../pages/Contact";
+import ArtistMember from "../pages/ArtistMember";
 
 const Body = () => {
     return (
@@ -22,7 +23,8 @@ const Body = () => {
                 <Route path='/support-us' component={Support} />
                 <Route path='/events' component={Events} />
                 <Route path='/exhibitions' component={Exhibitions} />
-                <Route path='/artists' component={Artists} />
+                <Route exact path='/artists' component={Artists} />
+                <Route path='/artists/:id' component={ArtistMember} />
                 {/*<Route path='/archive' component={Archive} />*/}
                 <Route path='/contact-us' component={Contact} />
             </Switch>
