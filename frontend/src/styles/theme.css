@@ -8,3 +8,7 @@
 .ct-header::after {
     border-top: none !important;
 }
+
+.vc_artist_details {
+    margin: 0 15px;
+}
