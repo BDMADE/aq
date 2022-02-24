@@ -42,7 +42,7 @@ const ArtistDetails = () => {
                     <div className="wpb_column vc_column_container vc_col-sm-4">
                         <div className="vc_column-inner" >
                             <div className="wpb_wrapper">
-                                <div className="wpb_single_image wpb_content_element vc_align_left   xtd-offset-frame">
+                                <div className="wpb_single_image wpb_content_element vc_align_left xtd-offset-frame">
                                     <figure className="wpb_wrapper vc_figure">
                                         <div className="vc_single_image-wrapper xtd-shadow--normal-light  vc_box_border_grey">
                                             <img width="800" height="1200" src={imageUrl} className="vc_single_image-img attachment-full" alt={artist.name} loading="lazy"/>
