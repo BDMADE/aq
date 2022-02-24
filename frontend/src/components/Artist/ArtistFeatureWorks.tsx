@@ -10,21 +10,21 @@ const ArtistFeatureWorks = (props: Props) => {
 
     let data = props.featureWork;
     return(
-        <div data-stellar-offset-parent="true" className="vc_row wpb_row vc_row-fluid content-padding vc_column-gap-35 vc_row-o-content-middle vc_row-flex">
+        <div data-stellar-offset-parent="true" className="vc_row wpb_row vc_row-fluid content-padding vc_column-gap-35 vc_row-o-content-middle">
             { data && (
                 <>
                     { data.map((item: any)=> (
                         <div key={item.id}>
                             { item.imagePosition === 'Left'? (
-                                <>
+                                <div className="vc_row vc_artist_details">
                                 <FeatureWorkImage image={item.Image.formats.medium.url}/>
                                 <FeatureWorkImageDetails details={item.details}/>
-                                </>
+                                </div>
                                 ) : (
-                                <>
+                                <div className="vc_row vc_artist_details">
                                     <FeatureWorkImageDetails details={item.details}/>
                                     <FeatureWorkImage image={item.Image.formats.medium.url}/>
-                                </>
+                                </div>
                             ) }
                         </div>
                     ))  }
