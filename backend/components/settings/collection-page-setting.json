@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_settings_collection_page_settings",
+  "info": {
+    "name": "Collection Page Setting",
+    "icon": "biohazard"
+  },
+  "options": {},
+  "attributes": {
+    "visibleTitle": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visibleBanner": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visibleGallery": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
