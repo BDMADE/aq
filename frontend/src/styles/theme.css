@@ -12,3 +12,11 @@
 .vc_artist_details {
     margin: 0 15px;
 }
+
+.gallery-image-item {
+    padding: 05px;
+}
+
+.gallery-container {
+    margin: 100px 0;
+}

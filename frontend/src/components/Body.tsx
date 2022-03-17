@@ -11,6 +11,7 @@ import Artists from "../pages/Artists";
 // import Archive from "../pages/Archive";
 import Contact from "../pages/Contact";
 import ArtistMember from "../pages/ArtistMember";
+import PhotoGallery from "../pages/PhotoGallery";
 
 const Body = () => {
     return (
@@ -19,7 +20,7 @@ const Body = () => {
                 <Route exact path='/' component={Homepage} />
                 <Route path='/memberships' component={Memberships} />
                 <Route path='/board-of-directors' component={Directors} />
-                {/*<Route path='/photo-gallery' component={Gallery} />*/}
+                <Route path='/photo-gallery' component={PhotoGallery} />
                 <Route path='/support-us' component={Support} />
                 <Route path='/events' component={Events} />
                 <Route path='/exhibitions' component={Exhibitions} />
