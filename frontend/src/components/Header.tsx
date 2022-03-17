@@ -22,8 +22,7 @@ const Header = () => {
                                         <ul className="sub-menu">
                                                 <li id="menu-item-143" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-143"><Link to="/memberships">Memberships</Link></li>
                                                 <li id="menu-item-144" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-144"><Link to="/board-of-directors">Board of Directors</Link></li>
-                                                {/*TODO:: Will update after finishing it*/}
-                                                {/*<li id="menu-item-145" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-145"><Link to="/photo-gallery">Photo Gallery</Link></li>*/}
+                                                <li id="menu-item-145" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-145"><Link to="/photo-gallery">Photo Gallery</Link></li>
                                                 <li id="menu-item-146" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-146"><Link to="/support-us">Support/Donations</Link></li>
                                             </ul>
                                         </li>
