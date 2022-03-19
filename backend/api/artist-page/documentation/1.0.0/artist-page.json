@@ -320,6 +320,7 @@
           "id",
           "title",
           "seo",
+          "banner",
           "settings"
         ],
         "properties": {

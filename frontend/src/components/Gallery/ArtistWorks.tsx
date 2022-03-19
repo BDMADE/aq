@@ -27,12 +27,13 @@ const ArtistWorks = () => {
                             <>
                             {/* Artist has many works photo  */}
                                 { item.works.map((photo: any)=> (
-                                     <ArtistPhoto artistId={item.id}
-                                                  name={item.name}
-                                                  designation={item.designation}
-                                                  photoId={photo.id}
-                                                  thumb={photo.formats.thumbnail.url}
-                                                  image={photo.url}/>
+                                    <ArtistPhoto
+                                        artistId={item.id}
+                                        name={item.name}
+                                        designation={item.designation}
+                                        photoId={photo.id}
+                                        thumb={photo.formats.thumbnail.url}
+                                        image={photo.url}/>
                                 ))  }
                         </>
                         ))  }
@@ -44,4 +45,3 @@ const ArtistWorks = () => {
 }
 
 export default ArtistWorks;
-

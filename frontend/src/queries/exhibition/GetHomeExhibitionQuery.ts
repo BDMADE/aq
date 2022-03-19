@@ -7,7 +7,7 @@ const GET_HOME_EXHIBITION_QUERY = gql`
             title
             start
             end
-            image {                
+            images {                
                 formats
             }
         }

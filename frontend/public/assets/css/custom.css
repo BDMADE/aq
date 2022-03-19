@@ -1236,3 +1236,13 @@ li#menu-item-114 {
 }
 
 
+a.event-link {
+    text-decoration: none;
+}
+
+
+@media (max-width: 767px) {
+    .closed {
+        display: none;
+    }
+}
