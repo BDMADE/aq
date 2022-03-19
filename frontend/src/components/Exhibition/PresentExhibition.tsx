@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import PresentCeremony from "../Ceramony/PresentCeremony";
 import {useQuery} from "@apollo/client";
 import GET_PRESENT_EXHIBITION_QUERY from "../../queries/exhibition/GetPresentExhibitionQuery";
@@ -25,7 +26,7 @@ const PresentExhibition = () => {
                                     <>
                                         { data.exhibitions.map((item: any)=> (
                                             <div key={item.id}>
-                                                <PresentCeremony title= {item.title} image={ item.image[0].formats.small.url} start={item.start} end={item.end}/>
+                                                <Link to={`exhibitions/${item.id}`}><PresentCeremony title= {item.title} image={ item.images[0].formats.small.url} start={item.start} end={item.end}/></Link>
                                             </div>
                                         ))  }
                                     </>

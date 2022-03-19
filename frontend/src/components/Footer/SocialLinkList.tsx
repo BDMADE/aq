@@ -8,13 +8,15 @@ const SocialLinkList = () => {
     if(loading) return (<p>Loading..</p>);
     if(error) return(<h4>Error! `${error.message}`</h4>);
 
+    let socialNetworkLinks: any = data.footer.socialNetworkLink;
+
     return(
         <aside id="text-1" className="col-12 col-md-2  text-center text-md-left  sidebar-widget widget_text">
-            <div className="textwidget">
-                { data.footer.socialNetworkLink && (
+            <div className="text widget">
+                { socialNetworkLinks && (
                     <p>
-                        { data.footer.socialNetworkLink.map((item: any)=> (
-                            item.isVisible && <SocialLink iconName={item.iconName} url={item.url}/>
+                        { socialNetworkLinks.map((item: any, index: any)=> (
+                            <span key={index}>{ item.isVisible && <SocialLink iconName={item.iconName} url={item.url}/> }</span>
                         ))  }
                     </p>
                 ) }

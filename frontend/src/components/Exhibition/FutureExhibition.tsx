@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import FutureCeremony from "../Ceramony/FutureCeremony";
 import {useQuery} from "@apollo/client";
 import GET_FUTURE_EXHIBITION_QUERY from "../../queries/exhibition/GetFutureExhibitionQuery";
@@ -25,9 +26,11 @@ const FutureExhibition = () => {
                                 { data.exhibitions && (
                                     <ul className="wcs-timetable__compact-list wcs-timetable__parent">
                                         { data.exhibitions.map((item: any)=> (
-                                            <li className="wcs-day wcs-day--visible" key={item.id}>
-                                                <FutureCeremony title= {item.title} image={ item.image[0].formats.small.url} start={item.start} end={item.end} />
-                                            </li>
+                                            <Link className="event-link" to={`exhibitions/${item.id}`} key={item.id}>
+                                                <li className="wcs-day wcs-day--visible" key={item.id}>
+                                                    <FutureCeremony title= {item.title} image={ item.images[0].formats.small.url} start={item.start} end={item.end} />
+                                                </li>
+                                            </Link>
                                         ))  }
                                     </ul>
                                 ) }
