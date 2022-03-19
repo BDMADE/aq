@@ -28,7 +28,7 @@
       "type": "string",
       "required": true
     },
-    "image": {
+    "images": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -54,6 +54,22 @@
       "collection": "tags",
       "via": "exhibitions",
       "dominant": true
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-data",
+      "required": true
     }
   }
 }
