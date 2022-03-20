@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "privacy_policy_pages",
+  "info": {
+    "name": "Privacy Policy Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Privacy & Policy",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-data",
+      "required": true
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.contact-page-settings",
+      "required": true
+    }
+  }
+}

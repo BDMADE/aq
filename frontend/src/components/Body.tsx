@@ -13,6 +13,7 @@ import ArtistMember from "../pages/ArtistMember";
 import PhotoGallery from "../pages/PhotoGallery";
 import EventDetails from "./Event/Detail/EventDetails";
 import ExhibitionDetails from "./Exhibition/Detail/ExhibitionDetails";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 
 const Body = () => {
     return (
@@ -32,6 +33,7 @@ const Body = () => {
                 <Route exact path='/archives' component={Archive} />
                 <Route exact path='/archives/:id' component={ArtistMember} />
                 <Route path='/contact-us' component={Contact} />
+                <Route path='/disclaimer-and-privacy-information' component={PrivacyPolicy} />
             </Switch>
         </div>
     );
