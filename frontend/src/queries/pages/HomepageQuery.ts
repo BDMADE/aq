@@ -20,8 +20,6 @@ const GET_HOMEPAGE_QUERY = gql`
               exhibitions
               details
               events
-              featured_collection
-              photo_gallery
             }
         }
     }

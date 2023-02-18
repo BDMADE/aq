@@ -54,6 +54,11 @@
       "repeatable": false,
       "component": "settings.membership-settings",
       "required": true
+    },
+    "new_membership_form_btn_text": {
+      "type": "string",
+      "default": "Download The form",
+      "required": true
     }
   }
 }

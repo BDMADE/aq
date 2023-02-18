@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/20/2022 10:01:55 AM"
+    "x-generation-date": "02/18/2023 9:35:40 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10393,7 +10393,8 @@
           "description",
           "seo",
           "banner",
-          "settings"
+          "settings",
+          "new_membership_form_btn_text"
         ],
         "properties": {
           "id": {
@@ -10654,7 +10655,8 @@
               "visible_title",
               "visible_description",
               "visible_side_images",
-              "visible_form_link"
+              "visible_new_form_link",
+              "visible_renew_form_link"
             ],
             "properties": {
               "id": {
@@ -10672,11 +10674,19 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_form_link": {
+              "visible_new_form_link": {
                 "type": "boolean",
                 "default": true
+              },
+              "visible_renew_form_link": {
+                "type": "boolean",
+                "default": false
               }
             }
+          },
+          "new_membership_form_btn_text": {
+            "type": "string",
+            "default": "Download The form"
           },
           "published_at": {
             "type": "string",
@@ -10689,7 +10699,8 @@
           "title",
           "description",
           "seo",
-          "settings"
+          "settings",
+          "new_membership_form_btn_text"
         ],
         "properties": {
           "title": {
@@ -10810,7 +10821,8 @@
               "visible_title",
               "visible_description",
               "visible_side_images",
-              "visible_form_link"
+              "visible_new_form_link",
+              "visible_renew_form_link"
             ],
             "properties": {
               "id": {
@@ -10828,11 +10840,19 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_form_link": {
+              "visible_new_form_link": {
                 "type": "boolean",
                 "default": true
+              },
+              "visible_renew_form_link": {
+                "type": "boolean",
+                "default": false
               }
             }
+          },
+          "new_membership_form_btn_text": {
+            "type": "string",
+            "default": "Download The form"
           },
           "published_at": {
             "type": "string",
@@ -13045,6 +13065,12 @@
           "id": {
             "type": "string"
           },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
           "seo": {
             "type": "object",
             "required": [
@@ -13147,12 +13173,6 @@
               }
             }
           },
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
           "settings": {
             "type": "object",
             "required": [
@@ -13160,9 +13180,7 @@
               "sliders",
               "exhibitions",
               "details",
-              "events",
-              "featured_collection",
-              "photo_gallery"
+              "events"
             ],
             "properties": {
               "id": {
@@ -13183,14 +13201,6 @@
               "events": {
                 "type": "boolean",
                 "default": true
-              },
-              "featured_collection": {
-                "type": "boolean",
-                "default": false
-              },
-              "photo_gallery": {
-                "type": "boolean",
-                "default": false
               }
             }
           },
@@ -13206,6 +13216,12 @@
           "settings"
         ],
         "properties": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
           "seo": {
             "type": "object",
             "required": [
@@ -13308,12 +13324,6 @@
               }
             }
           },
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
           "settings": {
             "type": "object",
             "required": [
@@ -13321,9 +13331,7 @@
               "sliders",
               "exhibitions",
               "details",
-              "events",
-              "featured_collection",
-              "photo_gallery"
+              "events"
             ],
             "properties": {
               "id": {
@@ -13344,14 +13352,6 @@
               "events": {
                 "type": "boolean",
                 "default": true
-              },
-              "featured_collection": {
-                "type": "boolean",
-                "default": false
-              },
-              "photo_gallery": {
-                "type": "boolean",
-                "default": false
               }
             }
           },
@@ -13373,7 +13373,10 @@
           "title",
           "description",
           "seo",
-          "settings"
+          "settings",
+          "renew_membership_form_link",
+          "new_membership_form_btn_text",
+          "renew_membership_form_btn_text"
         ],
         "properties": {
           "id": {
@@ -13624,7 +13627,7 @@
               }
             }
           },
-          "membership_form_link": {
+          "new_membership_form_link": {
             "type": "string"
           },
           "settings": {
@@ -13634,7 +13637,8 @@
               "visible_title",
               "visible_description",
               "visible_side_images",
-              "visible_form_link"
+              "visible_new_form_link",
+              "visible_renew_form_link"
             ],
             "properties": {
               "id": {
@@ -13652,11 +13656,27 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_form_link": {
+              "visible_new_form_link": {
                 "type": "boolean",
                 "default": true
+              },
+              "visible_renew_form_link": {
+                "type": "boolean",
+                "default": false
               }
             }
+          },
+          "renew_membership_form_link": {
+            "type": "string",
+            "default": "https://forms.gle/oCtQzN2nAqdU3j7w7"
+          },
+          "new_membership_form_btn_text": {
+            "type": "string",
+            "default": "Download the new form"
+          },
+          "renew_membership_form_btn_text": {
+            "type": "string",
+            "default": "Download the re-new form"
           },
           "published_at": {
             "type": "string",
@@ -13669,7 +13689,10 @@
           "title",
           "description",
           "seo",
-          "settings"
+          "settings",
+          "renew_membership_form_link",
+          "new_membership_form_btn_text",
+          "renew_membership_form_btn_text"
         ],
         "properties": {
           "title": {
@@ -13780,7 +13803,7 @@
               }
             }
           },
-          "membership_form_link": {
+          "new_membership_form_link": {
             "type": "string"
           },
           "settings": {
@@ -13790,7 +13813,8 @@
               "visible_title",
               "visible_description",
               "visible_side_images",
-              "visible_form_link"
+              "visible_new_form_link",
+              "visible_renew_form_link"
             ],
             "properties": {
               "id": {
@@ -13808,11 +13832,27 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_form_link": {
+              "visible_new_form_link": {
                 "type": "boolean",
                 "default": true
+              },
+              "visible_renew_form_link": {
+                "type": "boolean",
+                "default": false
               }
             }
+          },
+          "renew_membership_form_link": {
+            "type": "string",
+            "default": "https://forms.gle/oCtQzN2nAqdU3j7w7"
+          },
+          "new_membership_form_btn_text": {
+            "type": "string",
+            "default": "Download the new form"
+          },
+          "renew_membership_form_btn_text": {
+            "type": "string",
+            "default": "Download the re-new form"
           },
           "published_at": {
             "type": "string",
