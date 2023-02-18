@@ -1,11 +1,11 @@
 import React from 'react';
 import {useQuery} from "@apollo/client";
-import GET_HOME_EXHIBITION_QUERY from "../../queries/exhibition/GetHomeExhibitionQuery";
-import ExhibitionList from "./ExhibitionList";
+import EventList from "./eventList";
+import GET_HOME_EVENT_QUERY from "../../queries/events/GetHomeEventQuery";
 
-const Exhibitions = () => {
+const HomeEvents = () => {
 
-    let { loading, error, data } = useQuery(GET_HOME_EXHIBITION_QUERY);
+    let { loading, error, data } = useQuery(GET_HOME_EVENT_QUERY);
     if(loading) return (<p>Loading..</p>);
     if(error) return(<h4>Error! `${error.message}`</h4>);
 
@@ -15,7 +15,7 @@ const Exhibitions = () => {
                 <div className="wpb_wrapper">
                     <div className="wpb_text_column wpb_content_element">
                         <div className="wpb_wrapper">
-                            <h1 className="special-title display-2 " style={{ textAlign: "center" }}>Exhibitions</h1>
+                            <h1 className="special-title display-2 " style={{ textAlign: "center" }}>Events</h1>
                         </div>
                     </div>
                     <div className="wcs-timetable__wrapper">
@@ -26,9 +26,9 @@ const Exhibitions = () => {
                                         <div className="owl-stage owl-stage-transform">
                                             { data && (
                                                 <>
-                                                    { data.exhibitions.map((item: any)=> (
+                                                    { data.events.map((item: any)=> (
                                                         <div key={item.id}>
-                                                            <ExhibitionList id={item.id} title= {item.title} image={ item.images[0].formats.small.url} start={item.start} end={item.end} />
+                                                            <EventList title= {item.title} image={ item.images[0].formats.small.url} start={item.start} end={item.end} />
                                                         </div>
                                                     ))  }
                                                 </>
@@ -47,4 +47,4 @@ const Exhibitions = () => {
     );
 }
 
-export default Exhibitions;
+export default HomeEvents;

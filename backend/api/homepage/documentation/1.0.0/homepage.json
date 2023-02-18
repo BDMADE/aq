@@ -320,6 +320,12 @@
           "id": {
             "type": "string"
           },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
           "seo": {
             "type": "object",
             "required": [
@@ -422,12 +428,6 @@
               }
             }
           },
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
           "settings": {
             "type": "object",
             "required": [
@@ -435,9 +435,7 @@
               "sliders",
               "exhibitions",
               "details",
-              "events",
-              "featured_collection",
-              "photo_gallery"
+              "events"
             ],
             "properties": {
               "id": {
@@ -458,14 +456,6 @@
               "events": {
                 "type": "boolean",
                 "default": true
-              },
-              "featured_collection": {
-                "type": "boolean",
-                "default": false
-              },
-              "photo_gallery": {
-                "type": "boolean",
-                "default": false
               }
             }
           },
@@ -481,6 +471,12 @@
           "settings"
         ],
         "properties": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
           "seo": {
             "type": "object",
             "required": [
@@ -583,12 +579,6 @@
               }
             }
           },
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
           "settings": {
             "type": "object",
             "required": [
@@ -596,9 +586,7 @@
               "sliders",
               "exhibitions",
               "details",
-              "events",
-              "featured_collection",
-              "photo_gallery"
+              "events"
             ],
             "properties": {
               "id": {
@@ -619,14 +607,6 @@
               "events": {
                 "type": "boolean",
                 "default": true
-              },
-              "featured_collection": {
-                "type": "boolean",
-                "default": false
-              },
-              "photo_gallery": {
-                "type": "boolean",
-                "default": false
               }
             }
           },

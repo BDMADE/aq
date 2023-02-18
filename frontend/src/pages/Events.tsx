@@ -38,8 +38,8 @@ const Events = () => {
             <div className="container-fluid">
                 <article id="post-2" className="ct-page__entry-content post-2 page type-page status-publish hentry">
                     { visiblePresentEvent && <PresentEvent/> }
-                    { visiblePastEvent && <PastEvent/> }
                     { visibleFutureEvent && <FutureEvent/> }
+                    { visiblePastEvent && <PastEvent/> }
                 </article>
             </div>
         </>

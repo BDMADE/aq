@@ -1246,3 +1246,18 @@ a.event-link {
         display: none;
     }
 }
+
+.membership-button-group {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) {
+    .membership-button-group  {
+        flex-direction: row;
+    }
+}

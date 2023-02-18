@@ -24,12 +24,16 @@ const Memberships = () => {
     let bannerTitle: string = data.membership.title;
     let bannerUrl: string = data.membership.banner.url;
     let details: string = data.membership.description;
-    let formLink: string = data.membership.membership_form_link;
+    let formLink: string = data.membership.new_membership_form_link;
+    let renewFormLink: string = data.membership.renew_membership_form_link;
     // membership settings data
     let visibleTitle: boolean = data.membership.settings.visible_title;
     let visibleDescription: boolean = data.membership.settings.visible_description;
     let visibleSideImages: boolean = data.membership.settings.visible_side_images;
-    let visibleMembershipFormLink: boolean = data.membership.settings.visible_form_link;
+    let visibleMembershipFormLink: boolean = data.membership.settings.visible_new_form_link;
+    let visibleMembershipRenewFormLink: boolean = data.membership.settings.visible_renew_form_link;
+    let newFormBtnText: string =  data.membership.new_membership_form_btn_text;
+    let renewFormBtnText: string =  data.membership.renew_membership_form_btn_text;
 
     return (
         <>
@@ -39,7 +43,7 @@ const Memberships = () => {
                 <article id="post-2" className="ct-page__entry-content post-2 page type-page status-publish hentry">
                     <div id="staff-board" data-stellar-offset-parent="true" className="vc_row wpb_row vc_row-fluid content-padding-lg vc_row-o-content-middle vc_row-flex">
                         <div className="wpb_column vc_column_container vc_col-sm-7">
-                          <Details description={details} formLink={formLink} visibleDescription={visibleDescription} visibleMembershipFormLink={visibleMembershipFormLink}/>
+                          <Details description={details} newFormBtnText={newFormBtnText} renewFormBtnText={renewFormBtnText} formLink={formLink} renewFormLink={renewFormLink} visibleDescription={visibleDescription} visibleMembershipFormLink={visibleMembershipFormLink} visibleMembershipRenewFormLink={visibleMembershipRenewFormLink}/>
                         </div>
                         { visibleSideImages &&
                         <div className="wpb_column vc_column_container vc_col-sm-3 vc_col-sm-offset-2">

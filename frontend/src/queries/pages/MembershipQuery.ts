@@ -5,7 +5,8 @@ const GET_MEMBERSHIP_QUERY = gql`
   membership {    
     title
     description
-    membership_form_link
+    new_membership_form_link
+    renew_membership_form_link
     banner {
       url
     }
@@ -26,8 +27,11 @@ const GET_MEMBERSHIP_QUERY = gql`
       visible_title
       visible_description      
       visible_side_images
-      visible_form_link
-    }    
+      visible_new_form_link
+      visible_renew_form_link
+    }
+    new_membership_form_btn_text
+    renew_membership_form_btn_text
   }
 }   
 `;

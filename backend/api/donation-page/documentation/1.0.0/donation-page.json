@@ -322,7 +322,8 @@
           "description",
           "seo",
           "banner",
-          "settings"
+          "settings",
+          "new_membership_form_btn_text"
         ],
         "properties": {
           "id": {
@@ -583,7 +584,8 @@
               "visible_title",
               "visible_description",
               "visible_side_images",
-              "visible_form_link"
+              "visible_new_form_link",
+              "visible_renew_form_link"
             ],
             "properties": {
               "id": {
@@ -601,11 +603,19 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_form_link": {
+              "visible_new_form_link": {
                 "type": "boolean",
                 "default": true
+              },
+              "visible_renew_form_link": {
+                "type": "boolean",
+                "default": false
               }
             }
+          },
+          "new_membership_form_btn_text": {
+            "type": "string",
+            "default": "Download The form"
           },
           "published_at": {
             "type": "string",
@@ -618,7 +628,8 @@
           "title",
           "description",
           "seo",
-          "settings"
+          "settings",
+          "new_membership_form_btn_text"
         ],
         "properties": {
           "title": {
@@ -739,7 +750,8 @@
               "visible_title",
               "visible_description",
               "visible_side_images",
-              "visible_form_link"
+              "visible_new_form_link",
+              "visible_renew_form_link"
             ],
             "properties": {
               "id": {
@@ -757,11 +769,19 @@
                 "type": "boolean",
                 "default": true
               },
-              "visible_form_link": {
+              "visible_new_form_link": {
                 "type": "boolean",
                 "default": true
+              },
+              "visible_renew_form_link": {
+                "type": "boolean",
+                "default": false
               }
             }
+          },
+          "new_membership_form_btn_text": {
+            "type": "string",
+            "default": "Download The form"
           },
           "published_at": {
             "type": "string",
