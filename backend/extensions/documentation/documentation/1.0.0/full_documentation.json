@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/20/2022 10:01:55 AM"
+    "x-generation-date": "02/18/2023 8:50:11 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -13045,6 +13045,12 @@
           "id": {
             "type": "string"
           },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
           "seo": {
             "type": "object",
             "required": [
@@ -13147,12 +13153,6 @@
               }
             }
           },
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
           "settings": {
             "type": "object",
             "required": [
@@ -13160,9 +13160,7 @@
               "sliders",
               "exhibitions",
               "details",
-              "events",
-              "featured_collection",
-              "photo_gallery"
+              "events"
             ],
             "properties": {
               "id": {
@@ -13183,14 +13181,6 @@
               "events": {
                 "type": "boolean",
                 "default": true
-              },
-              "featured_collection": {
-                "type": "boolean",
-                "default": false
-              },
-              "photo_gallery": {
-                "type": "boolean",
-                "default": false
               }
             }
           },
@@ -13206,6 +13196,12 @@
           "settings"
         ],
         "properties": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
           "seo": {
             "type": "object",
             "required": [
@@ -13308,12 +13304,6 @@
               }
             }
           },
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
           "settings": {
             "type": "object",
             "required": [
@@ -13321,9 +13311,7 @@
               "sliders",
               "exhibitions",
               "details",
-              "events",
-              "featured_collection",
-              "photo_gallery"
+              "events"
             ],
             "properties": {
               "id": {
@@ -13344,14 +13332,6 @@
               "events": {
                 "type": "boolean",
                 "default": true
-              },
-              "featured_collection": {
-                "type": "boolean",
-                "default": false
-              },
-              "photo_gallery": {
-                "type": "boolean",
-                "default": false
               }
             }
           },
