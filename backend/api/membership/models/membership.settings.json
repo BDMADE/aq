@@ -46,13 +46,28 @@
       "required": false,
       "pluginOptions": {}
     },
-    "membership_form_link": {
+    "new_membership_form_link": {
       "type": "string"
     },
     "settings": {
       "type": "component",
       "repeatable": false,
       "component": "settings.membership-settings",
+      "required": true
+    },
+    "renew_membership_form_link": {
+      "type": "string",
+      "required": true,
+      "default": "https://forms.gle/oCtQzN2nAqdU3j7w7"
+    },
+    "new_membership_form_btn_text": {
+      "type": "string",
+      "default": "Download the new form",
+      "required": true
+    },
+    "renew_membership_form_btn_text": {
+      "type": "string",
+      "default": "Download the re-new form",
       "required": true
     }
   }

@@ -4,8 +4,12 @@ import ReactMarkdown from 'react-markdown'
 type Props = {
     description: string,
     formLink: string,
-    visibleDescription: boolean
-    visibleMembershipFormLink: boolean
+    renewFormLink: string,
+    visibleDescription: boolean,
+    visibleMembershipFormLink: boolean,
+    visibleMembershipRenewFormLink: boolean,
+    newFormBtnText: string,
+    renewFormBtnText: string
 }
 
 const Details = (props: Props) => {
@@ -15,7 +19,10 @@ const Details = (props: Props) => {
                 <div className="wpb_text_column wpb_content_element ">
                     <div className="wpb_wrapper lead">
                         { props.visibleDescription && <ReactMarkdown children={props.description}/> }
-                        { props.visibleMembershipFormLink && <a className="btn btn-lg btn-outline-primary" href={props.formLink}>Download the form</a> }
+                        <div className="membership-button-group">
+                            { props.visibleMembershipFormLink && <div><a className="btn btn-lg btn-outline-primary" href={props.formLink}>{props.newFormBtnText}</a> </div> }
+                            { props.visibleMembershipRenewFormLink && <div><a className="btn btn-lg btn-outline-primary" href={props.renewFormLink}>{props.renewFormBtnText}</a></div> }
+                        </div>
                     </div>
                 </div>
             </div>

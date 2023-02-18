@@ -26,8 +26,9 @@ const GET_DONATION_QUERY = gql`
       visible_title
       visible_description      
       visible_side_images
-      visible_form_link
-    }    
+      visible_new_form_link
+    }
+    new_membership_form_btn_text
   }
 }   
 `;

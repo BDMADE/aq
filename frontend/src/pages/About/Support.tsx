@@ -25,11 +25,16 @@ const Support = () => {
     let bannerUrl: string = data.donationPage.banner.url;
     let details: string = data.donationPage.description;
     let formLink: string = data.donationPage.donation_form_link;
+    let renewFormLink: string = '';
     // membership settings data
     let visibleTitle: boolean = data.donationPage.settings.visible_title;
     let visibleDescription: boolean = data.donationPage.settings.visible_description;
     let visibleSideImages: boolean = data.donationPage.settings.visible_side_images;
-    let visibleMembershipFormLink: boolean = data.donationPage.settings.visible_form_link;
+    let visibleMembershipFormLink: boolean = data.donationPage.settings.visible_new_form_link;
+    let visibleMembershipRenewFormLink: boolean = false;
+    let newFormBtnText: string =  data.donationPage.new_membership_form_btn_text;
+    // there is no form for donate page but this attribute is using in membership page, as we are using same template for these pages, keep same preferences.
+    let renewFormBtnText: string =  '';
 
     return (
         <>
@@ -39,7 +44,7 @@ const Support = () => {
                 <article id="post-2" className="ct-page__entry-content post-2 page type-page status-publish hentry">
                     <div id="staff-board" data-stellar-offset-parent="true" className="vc_row wpb_row vc_row-fluid content-padding-lg vc_row-o-content-middle vc_row-flex">
                         <div className="wpb_column vc_column_container vc_col-sm-7">
-                            <Details description={details} formLink={formLink} visibleDescription={visibleDescription} visibleMembershipFormLink={visibleMembershipFormLink}/>
+                            <Details description={details} formLink={formLink} visibleDescription={visibleDescription} visibleMembershipFormLink={visibleMembershipFormLink} renewFormLink={renewFormLink} visibleMembershipRenewFormLink={visibleMembershipRenewFormLink} newFormBtnText={newFormBtnText} renewFormBtnText={renewFormBtnText}/>
                         </div>
                         { visibleSideImages &&
                         <div className="wpb_column vc_column_container vc_col-sm-3 vc_col-sm-offset-2">

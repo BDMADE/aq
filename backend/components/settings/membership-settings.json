@@ -22,9 +22,14 @@
       "default": true,
       "required": true
     },
-    "visible_form_link": {
+    "visible_new_form_link": {
       "type": "boolean",
       "default": true,
+      "required": true
+    },
+    "visible_renew_form_link": {
+      "type": "boolean",
+      "default": false,
       "required": true
     }
   }
