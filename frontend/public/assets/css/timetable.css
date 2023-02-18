@@ -2864,7 +2864,7 @@
 }
 
 .wcs-timetable__carousel .wcs-class .wcs-modal-call {
-    cursor: pointer
+    cursor: move
 }
 
 .wcs-timetable__grid {

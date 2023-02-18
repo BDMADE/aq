@@ -1,8 +1,10 @@
 import React from "react";
 import useScript from "../../hooks/useScript";
 import useImageUrl from "../../hooks/useImageUrl";
+import {Link} from "react-router-dom";
 
 type Props = {
+    id: number,
     title: string,
     image: string,
     start: string,
@@ -14,6 +16,7 @@ const ExhibitionList = (props: Props) => {
     // loading slider js after loading the dom
     useScript(owlJsUrl);
 
+    let id = props.id;
     let title = props.title;
     let image_url =  useImageUrl(props.image);
     let dateFormat = require("dateformat");
@@ -28,7 +31,7 @@ const ExhibitionList = (props: Props) => {
                         <img alt={title} src={image_url} className="wcs-modal-call wcs-modal-call-height"/>
                     </div>
                 </div>
-                <div className="wcs-class__title wcs-modal-call h2">{title}</div>
+                <div className="wcs-class__title wcs-modal-call h2"><Link to={`/exhibitions/${id}`}>{title}</Link></div>
                 <div className="wcs-class__timestamp color-primary h4">
                     <span className="date-starting">{ start_date } - { end_date }</span>
                 </div>

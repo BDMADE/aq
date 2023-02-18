@@ -28,7 +28,7 @@ const Exhibitions = () => {
                                                 <>
                                                     { data.exhibitions.map((item: any)=> (
                                                         <div key={item.id}>
-                                                            <ExhibitionList title= {item.title} image={ item.images[0].formats.small.url} start={item.start} end={item.end} />
+                                                            <ExhibitionList id={item.id} title= {item.title} image={ item.images[0].formats.small.url} start={item.start} end={item.end} />
                                                         </div>
                                                     ))  }
                                                 </>
