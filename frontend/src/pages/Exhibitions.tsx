@@ -38,8 +38,8 @@ const Exhibitions = () => {
             <div className="container-fluid">
                 <article id="post-2" className="ct-page__entry-content post-2 page type-page status-publish hentry">
                     { visiblePresentExhibition && <PresentExhibition/> }
-                    { visiblePastExhibition && <PastExhibition/> }
                     { visibleFutureExhibition && <FutureExhibition/> }
+                    { visiblePastExhibition && <PastExhibition/> }
                 </article>
             </div>
         </>
