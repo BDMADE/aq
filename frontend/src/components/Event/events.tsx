@@ -28,7 +28,7 @@ const HomeEvents = () => {
                                                 <>
                                                     { data.events.map((item: any)=> (
                                                         <div key={item.id}>
-                                                            <EventList title= {item.title} image={ item.images[0].formats.small.url} start={item.start} end={item.end} />
+                                                            <EventList title= {item.title} image={ item.images[0]?.formats?.small?.url || item.images[0]?.url } start={item.start} end={item.end} />
                                                         </div>
                                                     ))  }
                                                 </>

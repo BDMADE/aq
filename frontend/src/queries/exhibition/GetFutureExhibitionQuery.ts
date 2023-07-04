@@ -8,6 +8,7 @@ const GET_FUTURE_EXHIBITION_QUERY = gql`
             start
             end
             images {
+                url
                 formats
             }
         }

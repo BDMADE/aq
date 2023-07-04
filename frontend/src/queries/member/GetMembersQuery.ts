@@ -7,6 +7,7 @@ const GET_MEMBERS_QUERY = gql`
             name
             designation
             image {
+                url
                 formats
             }
             group
