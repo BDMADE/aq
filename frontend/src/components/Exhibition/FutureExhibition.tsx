@@ -28,7 +28,7 @@ const FutureExhibition = () => {
                                         { data.exhibitions.map((item: any)=> (
                                             <Link className="event-link" to={`exhibitions/${item.id}`} key={item.id}>
                                                 <li className="wcs-day wcs-day--visible" key={item.id}>
-                                                    <FutureCeremony title= {item.title} image={ item.images[0].formats.small.url} start={item.start} end={item.end} />
+                                                    <FutureCeremony title= {item.title} image={ item.images[0]?.formats?.small?.url || item.images[0]?.url } start={item.start} end={item.end} />
                                                 </li>
                                             </Link>
                                         ))  }

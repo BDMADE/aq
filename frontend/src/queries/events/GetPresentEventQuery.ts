@@ -8,6 +8,7 @@ const GET_PRESENT_EVENT_QUERY = gql`
             start
             end
             images {
+                url
                 formats
             }
         }

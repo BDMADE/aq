@@ -9,9 +9,11 @@ query artist($id: ID!) {
     quotes
     description
     avatar {
+      url
       formats
     }
     works {
+      url
       formats
     }
     fetaureWork {
@@ -19,6 +21,7 @@ query artist($id: ID!) {
       name
       details
       Image {
+        url
         formats
       }
       imagePosition

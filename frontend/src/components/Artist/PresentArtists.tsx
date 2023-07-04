@@ -15,7 +15,7 @@ const PresentArtists = () => {
                 <div className="wpb_column vc_column_container vc_col-sm-12">
                     { data.artists.map((item: any)=> (
                         <div key={item.id}>
-                            <Link to={`artists/${item.id}`}><MemberList name={ item.name } designation={ item.designation} image={ item.avatar.formats.small.url }/></Link>
+                            <Link to={`artists/${item.id}`}><MemberList name={ item.name } designation={ item.designation} image={ item.avatar.formats?.small?.url || item.avatar?.url }/></Link>
                         </div>
                     ))  }
                 </div>

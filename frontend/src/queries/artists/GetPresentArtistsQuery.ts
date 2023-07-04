@@ -7,6 +7,7 @@ const GET_PRESENT_ARTISTS_QUERY = gql`
             name
             designation
             avatar {
+                url
                 formats
             }
         }
