@@ -20,7 +20,7 @@ const ArtistDetails = () => {
     let imageUrl;
 
     if(artist) {
-        imageUrl = getImageUrl(artist.avatar.formats.medium.url);
+        imageUrl = getImageUrl(artist.avatar?.formats?.medium?.url || artist.avatar?.url);
     }
 
     return(
@@ -77,7 +77,7 @@ const ArtistDetails = () => {
                                                 <>
                                                     { artist.works.map((item: any)=> (
                                                         <div key={item.id}>
-                                                            <ArtistWorkSliders image={ item.formats.small.url} />
+                                                            <ArtistWorkSliders image={ item.formats?.small?.url || item?.url} />
                                                         </div>
                                                     )) }
                                                 </>

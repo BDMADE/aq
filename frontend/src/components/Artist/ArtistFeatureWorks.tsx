@@ -17,13 +17,13 @@ const ArtistFeatureWorks = (props: Props) => {
                         <div key={item.id}>
                             { item.imagePosition === 'Left'? (
                                 <div className="vc_row vc_artist_details">
-                                <FeatureWorkImage image={item.Image.formats.medium.url}/>
+                                <FeatureWorkImage image={item?.Image?.formats?.medium?.url || item?.Image?.url}/>
                                 <FeatureWorkImageDetails details={item.details}/>
                                 </div>
                                 ) : (
                                 <div className="vc_row vc_artist_details">
                                     <FeatureWorkImageDetails details={item.details}/>
-                                    <FeatureWorkImage image={item.Image.formats.medium.url}/>
+                                    <FeatureWorkImage image={item?.Image?.formats?.medium?.url || item?.Image?.url}/>
                                 </div>
                             ) }
                         </div>

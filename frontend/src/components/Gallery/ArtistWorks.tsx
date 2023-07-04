@@ -32,8 +32,8 @@ const ArtistWorks = () => {
                                         name={item.name}
                                         designation={item.designation}
                                         photoId={photo.id}
-                                        thumb={photo.formats.thumbnail.url}
-                                        image={photo.url}/>
+                                        thumb={photo?.formats?.thumbnail?.url || photo?.url}
+                                        image={photo?.url}/>
                                 ))  }
                         </>
                         ))  }

@@ -26,7 +26,7 @@ const Members = () => {
                 <div className="wpb_column vc_column_container vc_col-sm-12">
                     { data.boardMembers.map((item: any)=> (
                         <div key={item.id}>
-                            <MemberList name={ item.name } designation={ item.designation} image={ item.image.formats.small.url }/>
+                            <MemberList name={ item.name } designation={ item.designation} image={ item.image?.formats?.small?.url || item?.image?.url }/>
                         </div>
                     ))  }
                 </div>
